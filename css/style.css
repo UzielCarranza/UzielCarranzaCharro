@@ -77,3 +77,32 @@ social links
     width: 45%;
     margin: auto;
 }
+
+
+@media  (max-width: 600px){
+    *{
+        outline: 2px solid red;
+    }
+    #main--nav{
+        width: 100%;
+    }
+    .nav--list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    #content-header{
+        width: 100%;
+    }
+    .header--content{
+        width: 100%;
+        padding: 2em;
+    }
+    .header--content > h1{
+        font-size: 3em;
+    }
+    .header--para{
+        font-size: 1.5em;
+    }
+}
