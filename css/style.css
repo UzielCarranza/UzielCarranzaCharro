@@ -4,6 +4,14 @@ body{
     background-color: #242424;
 }
 
+h1{
+    font-size: 4em;
+}
+
+
+/*
+nav
+*/
 #main--nav{
     background-color: #000;
 }
@@ -29,4 +37,43 @@ a{
 }
 .fa-adjust{
     color: #fff;
+}
+
+.yellow{
+
+    color: #FFFF00;
+}
+
+
+/*
+header
+*/
+
+#content-header{
+    width: 100%;
+}
+
+.header--content{
+    width: 50%;
+    margin: auto;
+    padding: 2em;
+    color: #fff;
+}
+
+.header--para{
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.header--a{
+    color: #FFFF00;
+}
+
+/*
+social links
+*/
+
+.social--links{
+    width: 45%;
+    margin: auto;
 }
