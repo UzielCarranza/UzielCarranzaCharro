@@ -140,6 +140,7 @@ social links
         justify-content: space-evenly;
         width: 80%;
     }
+
     #content-header{
         width: 100%;
     }
@@ -152,5 +153,7 @@ social links
     }
     .header--para{
         font-size: 1.5em;
+
+        line-height: 2em;
     }
 }
