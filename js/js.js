@@ -95,7 +95,18 @@ function getFooter() {
 function getLanSection() {
     // language=HTML
     return `
-        
+        <div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
 
     `;
 }
