@@ -20,7 +20,7 @@ function mainDiv() {
 
             <li class="list--items"><a href="mailto: uziel.carranzacharro@gmail.com">Contact</a></li>
 
-            <li class="list--items"><a href=""><i class="fas fa-adjust"></i
+            <li class="list--items" onclick="toggleMode()"><a href="#"><i class="fas fa-adjust"></i
             ></a></li>
         </ul>
     `
@@ -32,7 +32,7 @@ function header() {
         <div class="header--content">
             <h1>Hello There</h1>
             <h1>I'm <strong class="yellow">Uziel Carranza</strong></h1>
-            <p class="header--para">A <strong class="yellow"> end software engineer</strong>
+            <p class="header--para">A <strong class="yellow">front-end developer</strong>
                 with a strong passion for building responsive web application</p>
             <p class="header--para">get to <a href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"
                                               class="header--a">know me</a></p>
@@ -85,4 +85,19 @@ function getFooter(){
             <li class="list--items"><a href="#">Resume</a></li>
         </ul>
     `;
+}
+
+
+//dark mode
+
+let contrastToggle = false;
+
+function toggleMode(){
+    contrastToggle = !contrastToggle
+    if (contrastToggle){
+        document.body.classList += "light-theme"
+    }
+    else{
+        document.body.classList.remove("light-theme")
+    }
 }

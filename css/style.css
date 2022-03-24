@@ -5,9 +5,6 @@
     font-family: "Roboto", sans-serif;
 }
 
-body {
-    background-color: #242424;
-}
 
 h1 {
     font-size: 4em;
@@ -81,6 +78,7 @@ header
 
 #content-header {
     width: 100%;
+    background-color: #242424;
 }
 
 .header--content {
@@ -133,7 +131,7 @@ projects
 */
 
 #projects-section {
-    margin: 2em;
+    background-color: #242424;
 }
 
 .card {
@@ -181,12 +179,13 @@ projects
     text-align: center;
 }
 
-.card-back > a{
+.card-back > a {
     margin: auto;
     top: 1em;
 
 }
-.card-img{
+
+.card-img {
     width: 100%;
     height: 100%;
     padding: 1em;
@@ -197,19 +196,64 @@ projects
 footer
 */
 
-footer{
-    margin-top: 8em;
-    height: 6em;
-    background-color: #000;
+footer {
+    height: 14em;
+    background-color: #242424;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 }
-.footer-ul{
+
+.footer-ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: #000;
+    height: 7em;
+    align-items: center;
 }
+
+
+/*
+dark mode
+*/
+
+.light-theme #main--nav,
+.light-theme #content-header,
+.light-theme #projects-section,
+.light-theme footer {
+    background-color: #fff;
+}
+
+
+.light-theme a,
+.light-theme h1,
+.light-theme p,
+.light-theme .fa-adjust{
+    color: #242424;
+}
+
+.light-theme .yellow,
+.light-theme .header--a {
+    color: #0000FF;
+}
+
+.light-theme .fa-linkedin,
+.light-theme .fa-github,
+.light-theme .fa-file-pdf,
+.light-theme .card-back,
+.light-theme .card-back>p{
+    color: #fff;
+}
+.light-theme .list--items>a{
+    color: #fff !important;
+}
+
+.light-theme .card-front,
+.light-theme .card-back{
+    background-color: #242424;
+}
+
 
 @media (max-width: 600px) {
     #main--nav {
