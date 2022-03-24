@@ -100,17 +100,17 @@ function getLanSection() {
     return `
         <h1>Technologies</h1>
         <div class="row" id="technologies">
-            <div class="col-4">
-                <img class="col-12" src="../img/html.png" alt="HTML language">
+            <div class="col-12 text-center">
+                <img class="col-2 tech-imgs ml-4" src="../img/html.png" alt="HTML language">
             </div>
-            <div class="col-4 d-flex justify-content-center">
-                <img class="col-12"src="../img/css3.png" alt="css language" style="height: 70%">
+            <div class="col-10 ml-4 m-4">
+                <img class="col-3 tech-imgs"src="../img/css3.png" alt="css language" style="height: 90%">
             </div>
-            <div class="col-4">
-                <img class="col-12" src="../img/js.png" alt="JavaScript language">
+            <div class="col-10 d-flex justify-content-end">
+                <img class="col-2 tech-imgs" src="../img/js.png" alt="JavaScript language">
             </div>
-            <div class="col-12 text-center mt-4">
-                <img class="col-4" src="../img/bootstrap.png" alt="bootStrap library">
+            <div class="col-11 text-center mt-4">
+                <img class="col-2 tech-imgs" src="../img/bootstrap.png" alt="bootStrap library">
             </div>
         </div>
 

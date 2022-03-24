@@ -213,7 +213,7 @@ projects
 technologies
 */
 #language-section{
-    height: 40em;
+    height: auto;
     background-color: #242424;
     padding: 8em 0;
 }
@@ -229,6 +229,16 @@ technologies
     color: #fff;
     text-align: center;
     height: 3em;
+}
+
+.tech-imgs{
+    border: 3px solid #fff;
+    padding: 0.5em;
+    transition: transform .3s;
+}
+.tech-imgs:hover{
+    transform: scale(1.5);
+    background-color: #242424;
 }
 
 /*
@@ -260,14 +270,18 @@ light mode
 .light-theme #content-header,
 .light-theme #main--nav,
 .light-theme #projects-section,
-.light-theme footer {
+.light-theme footer,
+.light-theme #language-section,
+.light-theme #language-section>h1,
+.light-theme #technologies{
     background-color: #fff;
 }
 
 .light-theme a,
 .light-theme h1,
 .light-theme p,
-.light-theme .fa-adjust{
+.light-theme .fa-adjust,
+.light-theme #language-section>h1{
     color: #242424;
 }
 
