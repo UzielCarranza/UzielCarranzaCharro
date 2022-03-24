@@ -349,9 +349,6 @@ light mode
 }
 
 @media (min-width: 1024px){
-    /**{*/
-    /*    outline: 1px solid red;*/
-    /*}*/
     .social--links{
         width: 50%;
         justify-content: flex-start;
@@ -367,5 +364,8 @@ light mode
     }
     .card>.card-back>h3{
         margin-top: 1em;
+    }
+    #technologies{
+        width: 60%;
     }
 }
