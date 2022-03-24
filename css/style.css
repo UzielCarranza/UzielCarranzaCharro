@@ -197,6 +197,14 @@ projects
 footer
 */
 
+footer{
+    margin-top: 8em;
+    height: 6em;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .footer-ul{
     display: flex;
     flex-direction: row;
