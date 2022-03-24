@@ -3,6 +3,8 @@ $(document).ready(function () {
     $('#main--nav').append(mainDiv)
 
     $('#content-header').append(header)
+
+    $('#projects-section').append(projects)
 })
 
 //language=HTML
@@ -43,3 +45,29 @@ function header() {
     `
 }
 
+function projects(){
+    //language=HTML
+    return `
+    <div class="card mb-4">
+        <div class="card-front">
+            <img class="card-img" src="../img/weather.png" alt="weather app"></div>
+        <div class="card-back">
+            <h3>Weather App</h3>
+            <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
+            <a class="link-element click" href="https://github.com/UzielCarranza" target="_blank"><i
+                    class="fa-brands fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="card mt-4">
+        <div class="card-front">
+            <img class="card-img" src="../img/coffee.png" alt="weather app"></div>
+        <div class="card-back">
+            <h3>Coffee Project</h3>
+            <p>A front-end pair programming project developed with javaScript, CSS3 and HTML5</p>
+            <a class="link-element click" href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
+                    class="fa-brands fa-github" aria-hidden="true"></i></a>
+        </div>
+
+    </div>
+    `
+}

@@ -5,11 +5,11 @@
     font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
     background-color: #242424;
 }
 
-h1{
+h1 {
     font-size: 4em;
 }
 
@@ -17,11 +17,11 @@ h1{
 /*
 nav
 */
-#main--nav{
+#main--nav {
     background-color: #000;
 }
 
-.nav--list{
+.nav--list {
     width: 30%;
     display: flex;
     flex-direction: row;
@@ -31,17 +31,18 @@ nav
     height: 4em;
 }
 
-.list--items{
+.list--items {
     list-style: none;
     font-size: 1.2em;
 }
 
-a{
+a {
     color: #fff;
     position: relative;
     text-decoration: none;
 }
-a::before{
+
+a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -54,20 +55,21 @@ a::before{
     transition: transform .3s ease-in-out;
 }
 
-a:hover::before{
+a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
     color: #fff;
 }
-a:hover{
+
+a:hover {
     color: #fff;
 }
 
-.fa-adjust{
+.fa-adjust {
     color: #fff;
 }
 
-.yellow{
+.yellow {
 
     color: #FFFF00;
 }
@@ -77,23 +79,23 @@ a:hover{
 header
 */
 
-#content-header{
+#content-header {
     width: 100%;
 }
 
-.header--content{
+.header--content {
     width: 50%;
     margin: auto;
     padding: 2em;
     color: #fff;
 }
 
-.header--para{
+.header--para {
     font-size: 2em;
     line-height: 2em;
 }
 
-.header--a{
+.header--a {
     color: #FFFF00;
 }
 
@@ -101,7 +103,7 @@ header
 social links
 */
 
-.social--links{
+.social--links {
     width: 70%;
     margin: auto;
     display: flex;
@@ -109,7 +111,7 @@ social links
     justify-content: space-evenly;
 }
 
-.link-element{
+.link-element {
     background-color: #F06449;
     color: #ddd;
     padding: 6px;
@@ -126,32 +128,98 @@ social links
     transition: all 300ms ease;
 }
 
+/*
+projects
+*/
 
-@media  (max-width: 600px){
-    *{
+#projects-section {
+    margin: 2em;
+}
+
+.card {
+    height: 14em;
+    width: 80%;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    perspective: 300px;
+    transition: 0.5s;
+}
+
+.card:hover .card-front {
+    transform: rotateX(-180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateX(0deg);
+}
+
+.card-front {
+    height: 100%;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ddd;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+
+.card-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    color: #fff;
+    text-align: center;
+}
+
+.card-back > a{
+    margin: auto;
+
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+@media (max-width: 600px) {
+    * {
         outline: 2px solid red;
     }
-    #main--nav{
+
+    #main--nav {
         width: 100%;
     }
-    .nav--list{
+
+    .nav--list {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         width: 80%;
     }
 
-    #content-header{
+    #content-header {
         width: 100%;
     }
-    .header--content{
+
+    .header--content {
         width: 100%;
         padding: 2em;
     }
-    .header--content > h1{
+
+    .header--content > h1 {
         font-size: 3em;
     }
-    .header--para{
+
+    .header--para {
         font-size: 1.5em;
 
         line-height: 2em;
