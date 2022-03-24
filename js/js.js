@@ -7,6 +7,7 @@ $(document).ready(function () {
     $('#projects-section').append(projects)
 
     $('footer').append(getFooter)
+    $('#language-section').append(getLanSection)
 })
 
 //language=HTML
@@ -17,6 +18,8 @@ function mainDiv() {
                                        target="_blank">About</a></li>
 
             <li class="list--items"><a href="#projects-section">Projects</a></li>
+
+            <li class="list--items"><a href="#language-section">technologies</a></li>
 
             <li class="list--items"><a href="mailto: uziel.carranzacharro@gmail.com">Contact</a></li>
 
@@ -95,17 +98,20 @@ function getFooter() {
 function getLanSection() {
     // language=HTML
     return `
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <img src="" alt="">
+        <h1>Technologies</h1>
+        <div class="row" id="technologies">
+            <div class="col-4">
+                <img class="col-12" src="../img/html.png" alt="HTML language">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img class="col-12"src="../img/css3.png" alt="css language" style="height: 70%">
+            </div>
+            <div class="col-4">
+                <img class="col-12" src="../img/js.png" alt="JavaScript language">
+            </div>
+            <div class="col-12 text-center mt-4">
+                <img class="col-4" src="../img/bootstrap.png" alt="bootStrap library">
+            </div>
         </div>
 
     `;

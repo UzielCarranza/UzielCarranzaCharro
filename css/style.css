@@ -209,6 +209,27 @@ projects
     padding: 1em;
 }
 
+/*
+technologies
+*/
+#language-section{
+    height: 40em;
+    background-color: #242424;
+    padding: 8em 0;
+}
+
+#technologies{
+    width: 100%;
+    margin: auto;
+    background-color: #242424;
+}
+
+#language-section>h1{
+    background-color: #242424;
+    color: #fff;
+    text-align: center;
+    height: 3em;
+}
 
 /*
 footer
