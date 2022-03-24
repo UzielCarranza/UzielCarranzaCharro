@@ -50,6 +50,9 @@ function header() {
 function projects() {
     //language=HTML
     return `
+        <div class="project-header">
+        <h1>Projects</h1>
+        </div>
         <div class="card mb-4">
             <div class="card-front">
                 <img class="card-img" src="../img/weather.png" alt="weather app"></div>

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    /*outline: 2px solid red;*/
 }
 
 
@@ -133,7 +134,21 @@ projects
 #projects-section {
     background-color: #242424;
 }
-
+.project-header{
+    color: #fff;
+    height: 24em;
+    padding: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+.project-header>h1{
+    height: 14em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .card {
     height: 14em;
     width: 80%;
