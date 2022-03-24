@@ -16,9 +16,9 @@ function mainDiv() {
             <li class="list--items"><a href="https://www.linkedin.com/in/uziel-carranza-charro"
                                        target="_blank">About</a></li>
 
-            <li class="list--items"><a href="#">Projects</a></li>
+            <li class="list--items"><a href="#projects-section">Projects</a></li>
 
-            <li class="list--items"><a href="#">Contact</a></li>
+            <li class="list--items"><a href="mailto: uziel.carranzacharro@gmail.com">Contact</a></li>
 
             <li class="list--items"><a href=""><i class="fas fa-adjust"></i
             ></a></li>
