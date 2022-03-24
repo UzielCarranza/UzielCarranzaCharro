@@ -11,6 +11,9 @@ h1 {
     font-size: 4em;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /*
 nav
@@ -230,16 +233,15 @@ footer {
 
 
 /*
-dark mode
+light mode
 */
 
-.light-theme #main--nav,
 .light-theme #content-header,
+.light-theme #main--nav,
 .light-theme #projects-section,
 .light-theme footer {
     background-color: #fff;
 }
-
 
 .light-theme a,
 .light-theme h1,
@@ -260,7 +262,7 @@ dark mode
 .light-theme .card-back>p{
     color: #fff;
 }
-.light-theme .list--items>a{
+.light-theme footer>ul>li>a{
     color: #fff !important;
 }
 
