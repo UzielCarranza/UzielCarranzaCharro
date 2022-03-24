@@ -306,6 +306,14 @@ light mode
     background-color: #242424;
 }
 
+.light-theme .tech-imgs{
+    border: 8px solid #242424;
+}
+
+
+.light-theme .tech-imgs:hover{
+    border: 1px solid #242424;
+}
 
 @media (max-width: 600px) {
     #main--nav {
