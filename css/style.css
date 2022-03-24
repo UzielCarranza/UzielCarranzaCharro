@@ -11,7 +11,7 @@ h1 {
     font-size: 4em;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -119,9 +119,9 @@ social links
     padding: 6px;
     width: 32px;
     height: 32px;
-    font-size: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 50%;
 }
 
@@ -137,7 +137,8 @@ projects
 #projects-section {
     background-color: #242424;
 }
-.project-header{
+
+.project-header {
     color: #fff;
     height: 24em;
     padding: 3em;
@@ -146,12 +147,14 @@ projects
     flex-direction: column;
     justify-items: flex-end;
 }
-.project-header>h1{
+
+.project-header > h1 {
     height: 14em;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
+
 .card {
     height: 14em;
     width: 80%;
@@ -212,31 +215,32 @@ projects
 /*
 technologies
 */
-#language-section{
+#language-section {
     height: auto;
     background-color: #242424;
     padding: 8em 0;
 }
 
-#technologies{
+#technologies {
     width: 100%;
     margin: auto;
     background-color: #242424;
 }
 
-#language-section>h1{
+#language-section > h1 {
     background-color: #242424;
     color: #fff;
     text-align: center;
     height: 3em;
 }
 
-.tech-imgs{
+.tech-imgs {
     border: 3px solid #fff;
     padding: 0.5em;
     transition: transform .3s;
 }
-.tech-imgs:hover{
+
+.tech-imgs:hover {
     transform: scale(1.5);
     background-color: #242424;
 }
@@ -262,7 +266,66 @@ footer {
     align-items: center;
 }
 
+/*
+BTN Top
+*/
 
+#btn {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 18.5em;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #242424;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+#btn:hover {
+    background-color: #F06449;
+    color: #dddddd;
+}
+
+
+/*
+wavy hand
+*/
+
+.hand {
+    margin-left: 2em;
+    font-size: 2em;
+}
+
+.wave{
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {transform: rotate(0.0deg)}
+
+    10% {transform: rotate(14.0deg)}
+
+    20% {transform: rotate(-8.0deg)}
+
+    30% {transform: rotate(14.0deg)}
+    40% {transform: rotate(-4.0deg)}
+
+    50% {transform: rotate(10.0deg)}
+
+    60% {transform: rotate(0.0deg)}
+
+    100% {transform: rotate(0.0deg)}
+
+}
 /*
 light mode
 */
@@ -272,8 +335,8 @@ light mode
 .light-theme #projects-section,
 .light-theme footer,
 .light-theme #language-section,
-.light-theme #language-section>h1,
-.light-theme #technologies{
+.light-theme #language-section > h1,
+.light-theme #technologies {
     background-color: #fff;
 }
 
@@ -281,7 +344,7 @@ light mode
 .light-theme h1,
 .light-theme p,
 .light-theme .fa-adjust,
-.light-theme #language-section>h1{
+.light-theme #language-section > h1 {
     color: #242424;
 }
 
@@ -294,24 +357,25 @@ light mode
 .light-theme .fa-github,
 .light-theme .fa-file-pdf,
 .light-theme .card-back,
-.light-theme .card-back>p{
+.light-theme .card-back > p {
     color: #fff;
 }
-.light-theme footer>ul>li>a{
+
+.light-theme footer > ul > li > a {
     color: #fff !important;
 }
 
 .light-theme .card-front,
-.light-theme .card-back{
+.light-theme .card-back {
     background-color: #242424;
 }
 
-.light-theme .tech-imgs{
+.light-theme .tech-imgs {
     border: 8px solid #242424;
 }
 
 
-.light-theme .tech-imgs:hover{
+.light-theme .tech-imgs:hover {
     border: 1px solid #242424;
 }
 
@@ -348,24 +412,29 @@ light mode
 
 }
 
-@media (min-width: 1024px){
-    .social--links{
+@media (min-width: 1024px) {
+    .social--links {
         width: 50%;
         justify-content: flex-start;
     }
-    .link-element{
-        margin-left:  2em;
+
+    .link-element {
+        margin-left: 2em;
     }
-    .card{
+
+    .card {
         width: 40%;
     }
-    .card>.card-back>a{
+
+    .card > .card-back > a {
         top: 2.5em;
     }
-    .card>.card-back>h3{
+
+    .card > .card-back > h3 {
         margin-top: 1em;
     }
-    #technologies{
+
+    #technologies {
         width: 60%;
     }
 }

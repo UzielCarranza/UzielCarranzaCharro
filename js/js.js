@@ -14,16 +14,19 @@ $(document).ready(function () {
 function mainDiv() {
     return `
         <ul class="nav--list">
-            <li class="list--items"><a href="https://www.linkedin.com/in/uziel-carranza-charro"
-                                       target="_blank">About</a></li>
+            <li class="list--items" title="Uziel's LinkedIn Profile"><a
+                    href="https://www.linkedin.com/in/uziel-carranza-charro"
+                    target="_blank">About</a></li>
 
-            <li class="list--items"><a href="#projects-section">Projects</a></li>
+            <li class="list--items" title="Go to Projects Section"><a href="#projects-section">Projects</a></li>
 
-            <li class="list--items"><a href="#language-section">technologies</a></li>
+            <li class="list--items" title="Go to Uziel's Stack"><a href="#language-section">technologies</a></li>
 
-            <li class="list--items"><a href="mailto: uziel.carranzacharro@gmail.com">Contact</a></li>
+            <li class="list--items" title="Send a Direct Email"><a
+                    href="mailto: uziel.carranzacharro@gmail.com">Contact</a></li>
 
-            <li class="list--items" onclick="toggleMode()"><a href="#"><i class="fas fa-adjust"></i
+            <li class="list--items" title="Light Mode/Dark Mode" onclick="toggleMode()"><a href="#"><i
+                    class="fas fa-adjust"></i
             ></a></li>
         </ul>
     `
@@ -37,15 +40,19 @@ function header() {
             <h1>I'm <strong class="yellow">Uziel Carranza</strong></h1>
             <p class="header--para">A <strong class="yellow">front-end developer</strong>
                 with a strong passion for building responsive web application</p>
-            <p class="header--para">get to <a href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"
-                                              class="header--a">know me</a></p>
+            <p class="header--para">get to <a title="Uziel's LinkedIn Profile"
+                                              href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"
+                                              class="header--a">know me</a> <span class="hand wave">&#128075&#127997</span></p>
         </div>
         <div class="social--links">
-            <a class="link-element click" href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"><i
+            <a title="Uziel's LinkedIn Profile" class="link-element click"
+               href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"><i
                     class="fa-brands fa-linkedin"></i></a>
-            <a class="link-element click" href="https://github.com/UzielCarranza" target="_blank"><i
+            <a title="Uziel's Github" class="link-element click" href="https://github.com/UzielCarranza"
+               target="_blank"><i
                     class="fa-brands fa-github"></i></a>
-            <a class="link-element click" href="#" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            <a title="Download Resume" class="link-element click" href="#" target="_blank"><i
+                    class="fas fa-file-pdf"></i></a>
         </div>
     `
 }
@@ -62,7 +69,8 @@ function projects() {
             <div class="card-back">
                 <h3>Weather App</h3>
                 <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
-                <a class="link-element click" href="https://github.com/UzielCarranza" target="_blank"><i
+                <a title="Get myWeather App" class="link-element click" href="https://github.com/UzielCarranza"
+                   target="_blank"><i
                         class="fa-brands fa-github" aria-hidden="true"></i></a>
             </div>
         </div>
@@ -72,7 +80,8 @@ function projects() {
             <div class="card-back">
                 <h3>Coffee Project</h3>
                 <p>A front-end pair programming project developed with javaScript, CSS3 and HTML5</p>
-                <a class="link-element click" href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
+                <a title="Coffe Project Website" class="link-element click"
+                   href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
                         class="fa-brands fa-github" aria-hidden="true"></i></a>
             </div>
 
@@ -84,12 +93,15 @@ function getFooter() {
     //language=HTML
     return `
         <ul class="footer-ul">
-            <li class="list--items"><a href="https://github.com/UzielCarranza" target="_blank">Github</a></li>
+            <li title="Go to Uziel's Github Page" class="list--items"><a href="https://github.com/UzielCarranza"
+                                                                         target="_blank">Github</a></li>
 
-            <li class="list--items"><a href="https://www.linkedin.com/in/uziel-carranza-charro"
-                                       target="_blank">LinkedIn</a></li>
-            <li class="list--items"><a href="mailto: uziel.carranzacharro@gmail.com">Send Email</a></li>
-            <li class="list--items"><a href="#">Resume</a></li>
+            <li title="Uziel's LinkedIn Profile" class="list--items"><a
+                    href="https://www.linkedin.com/in/uziel-carranza-charro"
+                    target="_blank">LinkedIn</a></li>
+            <li title="Send a Direct Email" class="list--items"><a href="mailto: uziel.carranzacharro@gmail.com">Send
+                Email</a></li>
+            <li title="Download Resume" class="list--items"><a href="#">Resume</a></li>
         </ul>
     `;
 }
@@ -101,16 +113,18 @@ function getLanSection() {
         <h1>Technologies</h1>
         <div class="row" id="technologies">
             <div class="col-12  col-lg-12 text-center tech-imgs-section ">
-                <img class="col-2 col-lg-2 tech-imgs ml-4" src="../img/html.png" alt="HTML language">
+                <img title="HTML" class="col-2 col-lg-2 tech-imgs ml-4" src="../img/html.png" alt="HTML language">
             </div>
             <div class="col-10 col-lg-12  ml-4 m-4 tech-imgs-section ">
-                <img class="col-3 col-lg-2 tech-imgs"src="../img/css3.png" alt="css language" style="height: 90%">
+                <img title="CSS" class="col-3 col-lg-2 tech-imgs" src="../img/css3.png" alt="css language"
+                     style="height: 90%">
             </div>
             <div class="col-10 col-lg-12 d-flex justify-content-end tech-imgs-section ">
-                <img class="col-2 col-lg-2 tech-imgs" src="../img/js.png" alt="JavaScript language">
+                <img title="JavaScript" class="col-2 col-lg-2 tech-imgs" src="../img/js.png" alt="JavaScript language">
             </div>
             <div class="col-11 col-lg-12 text-center mt-4 tech-imgs-section ">
-                <img class="col-2 col-lg-2 tech-imgs" src="../img/bootstrap.png" alt="bootStrap library">
+                <img title="Bootstrap" class="col-2 col-lg-2 tech-imgs" src="../img/bootstrap.png"
+                     alt="bootStrap library">
             </div>
         </div>
 
@@ -129,4 +143,24 @@ function toggleMode() {
     } else {
         document.body.classList.remove("light-theme")
     }
+}
+
+
+//go back up
+
+let myBtn = document.getElementById('btn')
+window.onscroll = function () {
+    scrollBtn()
+};
+
+function scrollBtn() {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+        myBtn.style.display = "block"
+    } else {
+        myBtn.style.display = "none";
+    }
+}
+
+function goTop() {
+    document.documentElement.scrollTop = 0
 }
