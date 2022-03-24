@@ -5,6 +5,8 @@ $(document).ready(function () {
     $('#content-header').append(header)
 
     $('#projects-section').append(projects)
+
+    $('footer').append(getFooter)
 })
 
 //language=HTML
@@ -45,29 +47,42 @@ function header() {
     `
 }
 
-function projects(){
+function projects() {
     //language=HTML
     return `
-    <div class="card mb-4">
-        <div class="card-front">
-            <img class="card-img" src="../img/weather.png" alt="weather app"></div>
-        <div class="card-back">
-            <h3>Weather App</h3>
-            <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
-            <a class="link-element click" href="https://github.com/UzielCarranza" target="_blank"><i
-                    class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <div class="card mb-4">
+            <div class="card-front">
+                <img class="card-img" src="../img/weather.png" alt="weather app"></div>
+            <div class="card-back">
+                <h3>Weather App</h3>
+                <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
+                <a class="link-element click" href="https://github.com/UzielCarranza" target="_blank"><i
+                        class="fa-brands fa-github" aria-hidden="true"></i></a>
+            </div>
         </div>
-    </div>
-    <div class="card mt-4">
-        <div class="card-front">
-            <img class="card-img" src="../img/coffee.png" alt="weather app"></div>
-        <div class="card-back">
-            <h3>Coffee Project</h3>
-            <p>A front-end pair programming project developed with javaScript, CSS3 and HTML5</p>
-            <a class="link-element click" href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
-                    class="fa-brands fa-github" aria-hidden="true"></i></a>
-        </div>
+        <div class="card mt-4">
+            <div class="card-front">
+                <img class="card-img" src="../img/coffee.png" alt="weather app"></div>
+            <div class="card-back">
+                <h3>Coffee Project</h3>
+                <p>A front-end pair programming project developed with javaScript, CSS3 and HTML5</p>
+                <a class="link-element click" href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
+                        class="fa-brands fa-github" aria-hidden="true"></i></a>
+            </div>
 
-    </div>
+        </div>
     `
+}
+
+function getFooter(){
+    //language=HTML
+    return `
+        <ul class="footer-ul">
+            <li class="list--items"><a  href="https://github.com/UzielCarranza" target="_blank">Github</a></li>
+
+            <li class="list--items"><a  href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank">LinkedIn</a></li>
+            <li class="list--items"><a href="mailto: uziel.carranzacharro@gmail.com">Send Email</a></li>
+            <li class="list--items"><a href="#">Resume</a></li>
+        </ul>
+    `;
 }
