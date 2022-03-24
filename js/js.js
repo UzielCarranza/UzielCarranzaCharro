@@ -51,7 +51,7 @@ function projects() {
     //language=HTML
     return `
         <div class="project-header">
-        <h1>Projects</h1>
+            <h1>Projects</h1>
         </div>
         <div class="card mb-4">
             <div class="card-front">
@@ -77,13 +77,14 @@ function projects() {
     `
 }
 
-function getFooter(){
+function getFooter() {
     //language=HTML
     return `
         <ul class="footer-ul">
-            <li class="list--items"><a  href="https://github.com/UzielCarranza" target="_blank">Github</a></li>
+            <li class="list--items"><a href="https://github.com/UzielCarranza" target="_blank">Github</a></li>
 
-            <li class="list--items"><a  href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank">LinkedIn</a></li>
+            <li class="list--items"><a href="https://www.linkedin.com/in/uziel-carranza-charro"
+                                       target="_blank">LinkedIn</a></li>
             <li class="list--items"><a href="mailto: uziel.carranzacharro@gmail.com">Send Email</a></li>
             <li class="list--items"><a href="#">Resume</a></li>
         </ul>
@@ -91,16 +92,24 @@ function getFooter(){
 }
 
 
-//dark mode
+function getLanSection() {
+    // language=HTML
+    return `
+        
+
+    `;
+}
+
+
+//light mode
 
 let contrastToggle = false;
 
-function toggleMode(){
+function toggleMode() {
     contrastToggle = !contrastToggle
-    if (contrastToggle){
+    if (contrastToggle) {
         document.body.classList += "light-theme"
-    }
-    else{
+    } else {
         document.body.classList.remove("light-theme")
     }
 }

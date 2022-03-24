@@ -304,3 +304,25 @@ light mode
     }
 
 }
+
+@media (min-width: 1024px){
+    /**{*/
+    /*    outline: 1px solid red;*/
+    /*}*/
+    .social--links{
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .link-element{
+        margin-left:  2em;
+    }
+    .card{
+        width: 40%;
+    }
+    .card>.card-back>a{
+        top: 2.5em;
+    }
+    .card>.card-back>h3{
+        margin-top: 1em;
+    }
+}
