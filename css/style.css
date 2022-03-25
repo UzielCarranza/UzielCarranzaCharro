@@ -274,7 +274,7 @@ BTN Top
     display: none;
     position: fixed;
     bottom: 1em;
-    right: 18.5em;
+    right: 2%;
     z-index: 99;
     border: none;
     outline: none;
@@ -379,6 +379,10 @@ light mode
     border: 1px solid #242424;
 }
 
+
+/*
+small phones
+*/
 @media (max-width: 600px) {
     #main--nav {
         width: 100%;
@@ -412,6 +416,10 @@ light mode
 
 }
 
+
+/*
+large screens
+*/
 @media (min-width: 1024px) {
     .social--links {
         width: 50%;
@@ -436,5 +444,15 @@ light mode
 
     #technologies {
         width: 60%;
+    }
+}
+
+/*
+tablets
+*/
+@media (min-width: 600px) and (max-width: 768px){
+
+    #main--nav{
+        background-color: #F06449;
     }
 }
