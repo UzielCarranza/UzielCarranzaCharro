@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    /*outline: 2px solid red;*/
 }
 
 
@@ -513,6 +512,19 @@ large screens
     }
     .header--content {
         width: 70%;
+    }
+    #technologies{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .tech-imgs-section{
+        width: 20% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
 }
