@@ -433,10 +433,15 @@ small phones
     }
     #technologies{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
     }
-    #technologies>div:nth-child(3){
-        align-self: flex-end;
+    .tech-imgs{
+        width: 80%;
+    }
+    .tech-imgs-section{
+        margin: 4%;
     }
 
 }
