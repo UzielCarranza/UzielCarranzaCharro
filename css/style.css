@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    /*outline: 1px solid red;*/
 }
 
 
@@ -26,6 +27,7 @@ nav
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    justify-items: flex-start;
     align-items: center;
     margin: auto;
     height: 4em;
@@ -428,6 +430,13 @@ small phones
         font-size: 1.5em;
 
         line-height: 2em;
+    }
+    #technologies{
+        display: flex;
+        flex-direction: column;
+    }
+    #technologies>div:nth-child(3){
+        align-self: flex-end;
     }
 
 }
