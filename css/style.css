@@ -465,6 +465,19 @@ tablets
     .card-back {
         padding: 1em;
     }
+    #technologies{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: 10%;
+    }
+    .tech-imgs {
+        width: 50%;
+    }
+    .tech-imgs-section{
+        margin: 3%;
+    }
 }
 
 /*
