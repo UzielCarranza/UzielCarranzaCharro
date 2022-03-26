@@ -117,7 +117,7 @@ function getLanSection() {
                 <img title="HTML" class="col-2 col-lg-5 tech-imgs ml-4" src="../img/html.png" alt="HTML language">
             </div>
             <div class="col-10 col-lg-2  ml-4 m-4 tech-imgs-section ">
-                <img title="CSS" class="col-3 col-lg-5 tech-imgs" src="../img/css3.png" alt="css language"
+                <img title="CSS" class="col-3 col-lg-5 tech-imgs" src="../img/css.png" alt="css language"
                      style="height: 90%">
             </div>
             <div class="col-10 col-lg-2 d-flex justify-content-end tech-imgs-section ">
