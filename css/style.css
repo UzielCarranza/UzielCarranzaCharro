@@ -301,7 +301,7 @@ wavy hand
     font-size: 2em;
 }
 
-.wave{
+.wave {
     animation-name: wave-animation;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
@@ -310,22 +310,39 @@ wavy hand
 }
 
 @keyframes wave-animation {
-    0% {transform: rotate(0.0deg)}
+    0% {
+        transform: rotate(0.0deg)
+    }
 
-    10% {transform: rotate(14.0deg)}
+    10% {
+        transform: rotate(14.0deg)
+    }
 
-    20% {transform: rotate(-8.0deg)}
+    20% {
+        transform: rotate(-8.0deg)
+    }
 
-    30% {transform: rotate(14.0deg)}
-    40% {transform: rotate(-4.0deg)}
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
 
-    50% {transform: rotate(10.0deg)}
+    50% {
+        transform: rotate(10.0deg)
+    }
 
-    60% {transform: rotate(0.0deg)}
+    60% {
+        transform: rotate(0.0deg)
+    }
 
-    100% {transform: rotate(0.0deg)}
+    100% {
+        transform: rotate(0.0deg)
+    }
 
 }
+
 /*
 light mode
 */
@@ -418,6 +435,49 @@ small phones
 
 
 /*
+tablets
+*/
+@media (min-width: 600px) and (max-width: 768px) {
+    #main--nav {
+        width: 100%;
+    }
+
+    .nav--list {
+        width: 100%;
+    }
+
+    .header--content {
+        width: 100%;
+    }
+
+    .card > .card-back > a {
+        top: 2.5em;
+    }
+
+    .card-back {
+        padding: 1em;
+    }
+}
+
+/*
+laptops
+*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav--list {
+        width: 100%;
+    }
+
+    .header--content {
+        width: 100%;
+    }
+    #technologies>div:nth-child(2){
+        margin-left: 5em!important;
+    }
+
+}
+
+
+/*
 large screens
 */
 @media (min-width: 1024px) {
@@ -445,14 +505,6 @@ large screens
     #technologies {
         width: 60%;
     }
-}
 
-/*
-tablets
-*/
-@media (min-width: 600px) and (max-width: 768px){
 
-    #main--nav{
-        background-color: #F06449;
-    }
 }
