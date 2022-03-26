@@ -113,18 +113,18 @@ function getLanSection() {
     return `
         <h1>Technologies</h1>
         <div class="row" id="technologies">
-            <div class="col-12  col-lg-2 text-center tech-imgs-section ">
-                <img title="HTML" class="col-2 col-lg-5 tech-imgs ml-4" src="../img/html.png" alt="HTML language">
+            <div class="col-12 col-md-5 col-lg-2  tech-imgs-section ">
+                <img title="HTML" class="col-2 col-md-6 col-lg-5 tech-imgs" src="../img/html.png" alt="HTML language">
             </div>
-            <div class="col-12 col-lg-2  ml-4  tech-imgs-section ">
-                <img title="CSS" class="col-2 col-lg-5 tech-imgs" src="../img/css.png" alt="css language"
+            <div class="col-12 col-md-5 col-lg-2  tech-imgs-section ">
+                <img title="CSS" class="col-2 col-md-6 col-lg-5 tech-imgs" src="../img/css.png" alt="css language"
                      style="height: 90%">
             </div>
-            <div class="col-5 col-lg-2 tech-imgs-section ">
-                <img title="JavaScript" class="col-6 col-lg-5 tech-imgs" src="../img/js.png" alt="JavaScript language">
+            <div class="col-5 col-md-5 col-lg-2 tech-imgs-section ">
+                <img title="JavaScript" class="col-6 col-md-6 col-lg-5 tech-imgs" src="../img/js.png" alt="JavaScript language">
             </div>
-            <div class="col-12 col-lg-2 text-center mt-4 tech-imgs-section ">
-                <img title="Bootstrap" class="col-2 col-lg-5 tech-imgs" src="../img/bootstrap.png"
+            <div class="col-12 col-md-5 col-lg-2 tech-imgs-section ">
+                <img title="Bootstrap" class="col-2 col-md-6 col-lg-5 tech-imgs" src="../img/bootstrap.png"
                      alt="bootStrap library">
             </div>
         </div>

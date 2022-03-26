@@ -478,10 +478,18 @@ laptops
     .header--content {
         width: 100%;
     }
-    #technologies>div:nth-child(2){
-        margin-left: 5em!important;
+    #technologies{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-evenly;
+        height: 30em;
+        align-items: center;
+        margin: 0 auto;
     }
-
+    .tech-imgs{
+        margin: 10%;
+    }
 }
 
 
