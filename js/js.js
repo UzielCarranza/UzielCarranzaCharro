@@ -39,7 +39,8 @@ function header() {
             <h1>Hello There</h1>
             <h1>I'm <strong class="yellow">Uziel Carranza</strong></h1>
             <p class="header--para">A <strong class="yellow">front-end developer</strong>
-                with a strong passion for building responsive web application</p>
+                with a strong passion for <br>building
+                responsive web application</p>
             <p class="header--para">get to <a title="Uziel's LinkedIn Profile"
                                               href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"
                                               class="header--a">know me</a> <span class="hand wave">&#128075&#127997</span></p>
