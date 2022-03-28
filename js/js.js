@@ -51,13 +51,12 @@ function header() {
                     class="fa-brands fa-linkedin"></i></a>
             <a title="Uziel's Github" class="link-element click" href="https://github.com/UzielCarranza"
                target="_blank"><i
-                    class="fa-brands fa-github"></i></a>
+                    class="fa-brands fa-github-square"> </i></a>
             <a title="Download Resume" class="link-element click" href="#" target="_blank"><i
                     class="fas fa-file-pdf"></i></a>
         </div>
     `
 }
-
 function projects() {
     //language=HTML
     return `
@@ -67,9 +66,9 @@ function projects() {
             <div class="card-back">
                 <h3>Weather App</h3>
                 <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
-                <a title="Get myWeather App" class="link-element click" href="https://github.com/UzielCarranza"
+                <a title="Get myWeather App" class="element-card click" href="https://github.com/UzielCarranza"
                    target="_blank"><i
-                        class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="card">
@@ -78,9 +77,9 @@ function projects() {
             <div class="card-back">
                 <h3>Coffee Project</h3>
                 <p>A pair programming project developed with javaScript, CSS3, and HTML5</p>
-                <a title="Coffe Project Website" class="link-element click"
+                <a title="Coffe Project Website" class="element-card click"
                    href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
-                        class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
             </div>
 
         </div>
