@@ -45,7 +45,7 @@ function header() {
                                               href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"
                                               class="header--a">know me</a> <span class="hand wave">&#128075&#127997</span></p>
         </div>
-        <div class="social--links">
+        <div class="social--links animate__animated animate__backInUp">
             <a title="Uziel's LinkedIn Profile" class="link-element click"
                href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"><i
                     class="fa-brands fa-linkedin"></i></a>
