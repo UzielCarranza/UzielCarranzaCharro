@@ -110,7 +110,7 @@ function getFooter() {
 function getLanSection() {
     // language=HTML
     return `
-        <h1>Technologies</h1>
+        <h1 id="lan">Technologies</h1>
         <div class="row" id="technologies">
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4  tech-imgs-section ">
                 <img title="HTML" class="col-8 col-md-6 col-lg-5 tech-imgs" src="../img/html.png" alt="HTML language">
@@ -184,7 +184,11 @@ $('#projects').hover(function (){
     $(this).removeClass('animate__animated animate__rubberBand')
 })
 
-
+$('#language-section').hover(function (){
+    $('#language-section>h1').addClass('animate__animated animate__rubberBand')
+}, function (){
+    $('#language-section>h1').removeClass('animate__animated animate__rubberBand')
+})
 
 // $('#language-section').hover(function (){
 //     $(this).addClass('animate__animated animate__lightSpeedInLeft')
