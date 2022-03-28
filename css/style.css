@@ -144,9 +144,16 @@ projects
 
 #projects-section {
     background-color: #242424;
+    max-width: 100%;
+    width: 100%;
+    height: 40em;
+    display: flex;
+    flex-direction: row;
+    padding: 6em;
 }
 
 .project-header {
+    background-color: #242424;
     color: #fff;
     height: 24em;
     padding: 3em;
@@ -376,7 +383,8 @@ light mode
 .light-theme footer,
 .light-theme #language-section,
 .light-theme #language-section > h1,
-.light-theme #technologies {
+.light-theme #technologies,
+.light-theme .project-header{
     background-color: #fff;
 }
 
@@ -476,6 +484,14 @@ small phones
         justify-content: center;
         margin-top: 4em;
     }
+    #projects-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70em;
+        margin: 0;
+        padding: 0;
+    }
 
 }
 
@@ -484,6 +500,7 @@ small phones
 tablets
 */
 @media (min-width: 600px) and (max-width: 768px) {
+
     #main--nav {
         width: 100%;
     }
@@ -523,6 +540,13 @@ tablets
         width: 100%;
         max-width: 100%;
     }
+    #projects-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70em;
+        padding-top: 0;
+    }
 }
 
 /*
@@ -535,6 +559,12 @@ laptops
 
     .header--content {
         width: 100%;
+    }
+    #projects-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70em;
     }
 
     #technologies {
@@ -551,7 +581,8 @@ laptops
         max-width: 60%;
         margin: 0;
     }
-
+    #projects-section{
+    }
 }
 
 

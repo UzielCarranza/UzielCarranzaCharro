@@ -61,10 +61,7 @@ function header() {
 function projects() {
     //language=HTML
     return `
-        <div class="project-header">
-            <h1>Projects</h1>
-        </div>
-        <div class="card mb-4">
+        <div class="card">
             <div class="card-front">
                 <img class="card-img" src="../img/weather.png" alt="weather app"></div>
             <div class="card-back">
@@ -75,7 +72,7 @@ function projects() {
                         class="fa-brands fa-github" aria-hidden="true"></i></a>
             </div>
         </div>
-        <div class="card mt-4">
+        <div class="card">
             <div class="card-front">
                 <img class="card-img" src="../img/coffee.png" alt="weather app"></div>
             <div class="card-back">
