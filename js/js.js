@@ -90,7 +90,8 @@ function getFooter() {
     //language=HTML
     return `
         
-        <h5 class="signature-footer">&#64;2022 Uziel Carranza Charro</h5>
+        <h5 class="signature-footer">&#64;2022 Uziel Carranza Charro
+        </h5>
         <ul class="footer-ul">
             <li title="Go to Uziel's Github Page" class="list--items"><a href="https://github.com/UzielCarranza"
                                                                          target="_blank">Github</a></li>
@@ -152,11 +153,20 @@ window.onscroll = function () {
     scrollBtn()
 };
 
+//destroy btm
+let destroyBtn = document.getElementById('destroy')
+window.onscroll = function () {
+    scrollBtn()
+};
+
+
 function scrollBtn() {
     if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-        myBtn.style.display = "block"
+        myBtn.style.display = "block";
+        destroyBtn.style.display = "block"
     } else {
         myBtn.style.display = "none";
+        destroyBtn.style.display = "none"
     }
 }
 
@@ -165,8 +175,31 @@ function goTop() {
 }
 
 
+
+
+
 // animate__animated animate__bounce
 
-// $('#destroy').click(function (){
-//     $(document).addClass('animate__animated animate__bounce')
+$('#destroy').click(function (){
+    $('body').addClass('animate__animated animate__zoomOutDown')
+})
+
+$('#projects').hover(function (){
+    $(this).addClass('animate__animated animate__rubberBand')
+}, function (){
+    $(this).removeClass('animate__animated animate__rubberBand')
+})
+
+
+
+// $('#language-section').hover(function (){
+//     $(this).addClass('animate__animated animate__lightSpeedInLeft')
 // })
+
+
+
+
+$('footer').hover(function (){
+    $('#destroy').css('position', 'absolute')
+    $('#destroy').addClass('animate__animated animate__lightSpeedInLeft')
+})

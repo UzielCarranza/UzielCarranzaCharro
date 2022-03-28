@@ -678,4 +678,34 @@ large screens
     #btn {
         font-size: 1.5em;
     }
+
+
+}
+
+
+
+/*
+
+Animations
+
+
+*/
+#destroy{
+    background-color:  #FFFF00;
+    width: auto;
+    margin: auto;
+    display: none;
+    position: fixed;
+    right: 49%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: #F06449;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#destroy:hover {
+    background-color: #F06449;
+    color: #dddddd;
 }
