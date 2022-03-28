@@ -35,7 +35,7 @@ function mainDiv() {
 function header() {
     //language=HTML
     return `
-        <div class="header--content">
+        <div class="header--content animate__animated animate__backInUp">
             <h1>Hello There</h1>
             <h1>I'm <strong class="yellow">Uziel Carranza</strong></h1>
             <p class="header--para">A <strong class="yellow">front-end developer</strong>
@@ -163,3 +163,10 @@ function scrollBtn() {
 function goTop() {
     document.documentElement.scrollTop = 0
 }
+
+
+// animate__animated animate__bounce
+
+// $('#destroy').click(function (){
+//     $(document).addClass('animate__animated animate__bounce')
+// })
