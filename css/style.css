@@ -519,6 +519,11 @@ small phones
         margin: 0;
         padding: 0;
     }
+    .card-back > a {
+        margin: auto;
+        top: 3em;
+
+    }
 
 }
 
@@ -609,6 +614,10 @@ laptops
         margin: 0;
     }
     #projects-section{
+    }
+    .card-back > a {
+        top: 3em;
+
     }
 }
 
