@@ -436,15 +436,16 @@ light mode
     background-color: #000;
     bottom: 0;
     left: 0;
-    transform-origin: right;
+    transform-origin: center;
     transform: scaleX(0);
-    transition: transform .3s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 
 .light-theme a:hover::before {
-    transform-origin: left;
+    transform-origin: center;
     transform: scaleX(1);
     color: #000;
+    transition: transform .7s ease-in-out;
 }
 
 .light-theme a:hover {
