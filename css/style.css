@@ -466,6 +466,13 @@ small phones
     .tech-imgs-section {
         margin: 4%;
     }
+    .social--links{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
 }
 
@@ -508,6 +515,10 @@ tablets
 
     .tech-imgs-section {
         margin: 3%;
+    }
+    .social--links{
+        width: 100%;
+        max-width: 100%;
     }
 }
 
