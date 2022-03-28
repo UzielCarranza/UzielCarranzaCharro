@@ -257,6 +257,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
 }
 
 .footer-ul {
@@ -266,6 +267,16 @@ footer {
     background-color: #000;
     height: 7em;
     align-items: center;
+    margin: 0;
+}
+
+.signature-footer{
+    color: #fff;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 1em;
+    background-color: #000;
     margin: 0;
 }
 
