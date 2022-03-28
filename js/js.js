@@ -91,7 +91,7 @@ function getFooter() {
     //language=HTML
     return `
         
-        <h5 class="signature-footer">2022 Uziel Carranza Charro</h5>
+        <h5 class="signature-footer">&#64;2022 Uziel Carranza Charro</h5>
         <ul class="footer-ul">
             <li title="Go to Uziel's Github Page" class="list--items"><a href="https://github.com/UzielCarranza"
                                                                          target="_blank">Github</a></li>
