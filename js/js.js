@@ -18,7 +18,7 @@ function mainDiv() {
                     href="https://www.linkedin.com/in/uziel-carranza-charro"
                     target="_blank">About</a></li>
 
-            <li class="list--items" title="Go to Projects Section"><a href="#projects-section">Projects</a></li>
+            <li class="list--items" title="Go to Projects Section"><a href="#projects">Projects</a></li>
 
             <li class="list--items" title="Go to Uziel's Stack"><a href="#language-section">technologies</a></li>
 
@@ -77,7 +77,7 @@ function projects() {
                 <img class="card-img" src="../img/coffee.png" alt="weather app"></div>
             <div class="card-back">
                 <h3>Coffee Project</h3>
-                <p>A front-end pair programming project developed with javaScript, CSS3 and HTML5</p>
+                <p>A pair programming project developed with javaScript, CSS3, and HTML5</p>
                 <a title="Coffe Project Website" class="link-element click"
                    href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
                         class="fa-brands fa-github" aria-hidden="true"></i></a>
