@@ -108,10 +108,11 @@ social links
 
 .social--links {
     width: 70%;
+    max-width: 70%;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 .link-element {
@@ -124,6 +125,7 @@ social links
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    margin-left: 2em;
 }
 
 .click {
@@ -538,15 +540,6 @@ laptops
 large screens
 */
 @media (min-width: 1024px) {
-    .social--links {
-        width: 50%;
-        justify-content: flex-start;
-    }
-
-    .link-element {
-        margin-left: 2em;
-    }
-
     .card {
         width: 40%;
     }
