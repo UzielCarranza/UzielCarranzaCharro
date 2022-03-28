@@ -118,8 +118,8 @@ social links
     background-color: #F06449;
     color: #ddd;
     padding: 6px;
-    width: 32px;
-    height: 32px;
+    width: 5em;
+    height: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,6 +130,11 @@ social links
     cursor: pointer;
     transition: all 300ms ease;
 }
+
+.fa-linkedin, .fa-github, .fa-file-pdf {
+    font-size: 2.5em;
+}
+
 
 /*
 projects
@@ -270,7 +275,7 @@ footer {
     margin: 0;
 }
 
-.signature-footer{
+.signature-footer {
     color: #fff;
     width: 100%;
     max-width: 100%;
@@ -444,16 +449,19 @@ small phones
 
         line-height: 2em;
     }
-    #technologies{
+
+    #technologies {
         display: flex;
         flex-direction: row;
         width: 80%;
         margin: 0 auto;
     }
-    .tech-imgs{
+
+    .tech-imgs {
         width: 80%;
     }
-    .tech-imgs-section{
+
+    .tech-imgs-section {
         margin: 4%;
     }
 
@@ -483,17 +491,20 @@ tablets
     .card-back {
         padding: 1em;
     }
-    #technologies{
+
+    #technologies {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         width: 90%;
         margin: 10%;
     }
+
     .tech-imgs {
         width: 50%;
     }
-    .tech-imgs-section{
+
+    .tech-imgs-section {
         margin: 3%;
     }
 }
@@ -509,7 +520,8 @@ laptops
     .header--content {
         width: 100%;
     }
-    #technologies{
+
+    #technologies {
         display: flex;
         flex-direction: row;
         width: 90%;
@@ -550,22 +562,27 @@ large screens
     #technologies {
         width: 60%;
     }
-    #main--nav{
+
+    #main--nav {
         width: 100%;
     }
-    .nav--list{
+
+    .nav--list {
         width: 90%;
     }
+
     .header--content {
         width: 70%;
     }
-    #technologies{
+
+    #technologies {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    .tech-imgs-section{
+
+    .tech-imgs-section {
         width: 20% !important;
         display: flex;
         flex-direction: column;
@@ -573,11 +590,12 @@ large screens
         align-items: center;
         height: 20em;
     }
+
     footer ul {
         margin: 0;
     }
 
-    #btn{
+    #btn {
         font-size: 1.5em;
     }
 }
