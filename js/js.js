@@ -155,18 +155,12 @@ window.onscroll = function () {
 
 //destroy btm
 let destroyBtn = document.getElementById('destroy')
-window.onscroll = function () {
-    scrollBtn()
-};
-
 
 function scrollBtn() {
     if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
         myBtn.style.display = "block";
-        destroyBtn.style.display = "block"
     } else {
         myBtn.style.display = "none";
-        destroyBtn.style.display = "none"
     }
 }
 
@@ -197,9 +191,15 @@ $('#projects').hover(function (){
 // })
 
 
-
-
+//
+// destroyBtn.style.display = "block"
+//
+// destroyBtn.style.display = "none"
 $('footer').hover(function (){
-    $('#destroy').css('position', 'absolute')
+    $('#destroy').css({'position': 'absolute', 'display': 'block'})
+
     $('#destroy').addClass('animate__animated animate__lightSpeedInLeft')
+}, function (){
+
+    $('#destroy').css({'position': 'fixed', 'display': 'none'})
 })
