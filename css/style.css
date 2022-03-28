@@ -532,6 +532,11 @@ laptops
         align-items: center;
         margin: 0 auto;
     }
+    .social--links{
+        width: 60%;
+        max-width: 60%;
+        margin: 0;
+    }
 
 }
 
