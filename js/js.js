@@ -62,7 +62,7 @@ function projects() {
     return `
         <div class="card">
             <div class="card-front">
-                <img class="card-img" src="../img/weather.png" alt="weather app"></div>
+                <img class="card-img" src="img/weather.png" alt="weather app"></div>
             <div class="card-back">
                 <h3>Weather App</h3>
                 <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
@@ -73,7 +73,7 @@ function projects() {
         </div>
         <div class="card">
             <div class="card-front">
-                <img class="card-img" src="../img/coffee.png" alt="weather app"></div>
+                <img class="card-img" src="img/coffee.png" alt="weather app"></div>
             <div class="card-back">
                 <h3>Coffee Project</h3>
                 <p>A pair programming project developed with javaScript, CSS3, and HTML5</p>
@@ -113,17 +113,17 @@ function getLanSection() {
         <h1 id="lan">Technologies</h1>
         <div class="row" id="technologies">
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4  tech-imgs-section ">
-                <img title="HTML" class="col-8 col-md-6 col-lg-5 tech-imgs" src="../img/html.png" alt="HTML language">
+                <img title="HTML" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/html.png" alt="HTML language">
             </div>
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4  tech-imgs-section ">
-                <img title="CSS" class="col-8 col-md-6 col-lg-5 tech-imgs" src="../img/css.png" alt="css language"
+                <img title="CSS" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/css.png" alt="css language"
                      style="height: 90%">
             </div>
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
-                <img title="JavaScript" class="col-8 col-md-6 col-lg-5 tech-imgs" src="../img/js.png" alt="JavaScript language">
+                <img title="JavaScript" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/js.png" alt="JavaScript language">
             </div>
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
-                <img title="Bootstrap" class="col-8 col-md-6 col-lg-5 tech-imgs" src="../img/bootstrap.png"
+                <img title="Bootstrap" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/bootstrap.png"
                      alt="bootStrap library">
             </div>
         </div>
