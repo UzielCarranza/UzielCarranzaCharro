@@ -66,7 +66,7 @@ function projects() {
             <div class="card-back">
                 <h3>Weather App</h3>
                 <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
-                <a title="Get myWeather App" class="element-card click" href="https://github.com/UzielCarranza"
+                <a title="Get myWeather App" class="element-card click" href="https://github.com/UzielCarranza/weather-app"
                    target="_blank"><i
                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
             </div>
