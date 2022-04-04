@@ -713,6 +713,36 @@ large screens
         margin: 0;
         padding: 0;
     }
+
+    #language-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #language-section>h1{
+        width: 100%;
+        height: 4em;
+        font-size: 100%;
+    }
+    .project-header{
+        font-size: 30%;
+        margin: 0;
+        padding: 0;
+
+    }
+    #projects-section{
+        margin: 0;
+        padding: 0;
+        height: 40em;
+    }
+    .social--links{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+    .link-element{
+        width: 100%;
+    }
 }
 
 
