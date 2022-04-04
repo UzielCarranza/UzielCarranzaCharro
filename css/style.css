@@ -687,7 +687,7 @@ large screens
 
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     #main--nav{
         display: flex;
         flex-direction: column;
