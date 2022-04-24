@@ -623,7 +623,12 @@ laptops
     }
     .card-back > a {
         top: 3em;
-
+    }
+    .tech-imgs-section{
+        margin: 2em;
+    }
+    #language-section{
+        height: 80rem;
     }
 }
 
