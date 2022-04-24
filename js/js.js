@@ -67,7 +67,7 @@ function projects() {
                 <img class="card-img" src="img/weather.png" alt="weather app"></div>
             <div class="card-back">
                 <h3>Weather App</h3>
-                <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
+                <p>A web application developed with BootStrap, vanilla javaScript, CSS3, and HTML5</p>
                 <a title="Get myWeather App" class="element-card click"
                    href="https://github.com/UzielCarranza/weather-app"
                    target="_blank"><i
@@ -79,9 +79,21 @@ function projects() {
                 <img class="card-img" src="img/coffee.png" alt="weather app"></div>
             <div class="card-back">
                 <h3>Coffee Project</h3>
-                <p>A pair programming project developed with javaScript, CSS3, and HTML5</p>
+                <p>A pair programming project developed with vanilla javaScript, CSS3, and HTML5</p>
                 <a title="Coffe Project Website" class="element-card click"
                    href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
+                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <img class="card-img" src="img/moviesApp.png" alt="weather app"></div>
+            <div class="card-back">
+                <h3>Underground movies Mandness</h3>
+                <p>A pair programming project developed with vanilla javaScript, Jquery, CSS3, HTML5 and Glitch's API system</p>
+                <a title="Coffe Project Website" class="element-card click"
+                   href="https://github.com/uziel-tyreik/movies" target="_blank"><i
                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
             </div>
 
