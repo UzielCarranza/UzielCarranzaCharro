@@ -43,7 +43,8 @@ function header() {
                 responsive web applications</p>
             <p class="header--para">get to <a title="Uziel's LinkedIn Profile"
                                               href="https://www.linkedin.com/in/uziel-carranza-charro" target="_blank"
-                                              class="header--a">know me</a> <span class="hand wave">&#128075&#127997</span></p>
+                                              class="header--a">know me</a> <span
+                    class="hand wave">&#128075&#127997</span></p>
         </div>
         <div class="social--links animate__animated animate__backInUp">
             <a title="Uziel's LinkedIn Profile" class="link-element click"
@@ -57,6 +58,7 @@ function header() {
         </div>
     `
 }
+
 function projects() {
     //language=HTML
     return `
@@ -66,7 +68,8 @@ function projects() {
             <div class="card-back">
                 <h3>Weather App</h3>
                 <p>A web application developed with BootStrap,javaScript, CSS3, and HTML5</p>
-                <a title="Get myWeather App" class="element-card click" href="https://github.com/UzielCarranza/weather-app"
+                <a title="Get myWeather App" class="element-card click"
+                   href="https://github.com/UzielCarranza/weather-app"
                    target="_blank"><i
                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
             </div>
@@ -89,7 +92,7 @@ function projects() {
 function getFooter() {
     //language=HTML
     return `
-        
+
         <h5 class="signature-footer">&#64;2022 Uziel Carranza Charro
         </h5>
         <ul class="footer-ul">
@@ -120,11 +123,16 @@ function getLanSection() {
                      style="height: 90%">
             </div>
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
-                <img title="JavaScript" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/js.png" alt="JavaScript language">
+                <img title="JavaScript" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/js.png"
+                     alt="JavaScript language">
             </div>
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
                 <img title="Bootstrap" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/bootstrap.png"
                      alt="bootStrap library">
+            </div>
+            <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
+                <img title="Bootstrap" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/java.png"
+                     alt="Java programming language">
             </div>
         </div>
 
@@ -169,24 +177,21 @@ function goTop() {
 }
 
 
-
-
-
 // animate__animated animate__bounce
 
-$('#destroy').click(function (){
+$('#destroy').click(function () {
     $('body').addClass('animate__animated animate__zoomOutDown')
 })
 
-$('#projects').hover(function (){
+$('#projects').hover(function () {
     $(this).addClass('animate__animated animate__rubberBand')
-}, function (){
+}, function () {
     $(this).removeClass('animate__animated animate__rubberBand')
 })
 
-$('#language-section').hover(function (){
+$('#language-section').hover(function () {
     $('#language-section>h1').addClass('animate__animated animate__rubberBand')
-}, function (){
+}, function () {
     $('#language-section>h1').removeClass('animate__animated animate__rubberBand')
 })
 
@@ -199,11 +204,11 @@ $('#language-section').hover(function (){
 // destroyBtn.style.display = "block"
 //
 // destroyBtn.style.display = "none"
-$('footer').hover(function (){
+$('footer').hover(function () {
     $('#destroy').css({'position': 'absolute', 'display': 'block'})
 
     $('#destroy').addClass('animate__animated animate__lightSpeedInLeft')
-}, function (){
+}, function () {
 
     $('#destroy').css({'position': 'fixed', 'display': 'none'})
 })
