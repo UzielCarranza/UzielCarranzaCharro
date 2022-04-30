@@ -158,6 +158,11 @@ function getLanSection() {
                 <img title="Bootstrap" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/java.png"
                      alt="Java programming language">
             </div>
+
+            <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
+                <img title="Bootstrap" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/Jquery.png"
+                     alt="Java programming language">
+            </div>
         </div>
 
     `;
