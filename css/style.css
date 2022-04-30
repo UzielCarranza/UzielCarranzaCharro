@@ -586,7 +586,7 @@ tablets
 
     #projects-section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
         height: 70em;
         padding-top: 0;
@@ -742,7 +742,7 @@ large screens
     .footer-ul {
         height: 12em;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
         margin: 0;
         padding: 0;
