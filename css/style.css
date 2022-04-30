@@ -588,7 +588,7 @@ tablets
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        height: 70em;
+        height: 100%;
         padding-top: 0;
     }
 
