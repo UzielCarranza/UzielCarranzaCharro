@@ -98,6 +98,18 @@ function projects() {
             </div>
 
         </div>
+         <div class="card">
+            <div class="card-front">
+                <img class="card-img" src="img/contactsManager.png" alt="Contacts manager app"></div>
+            <div class="card-back">
+                <h3>Contacts Manager App</h3>
+                <p>A pair programming project developed with Java, following the OOP method</p>
+                <a title="Contacts Manager App" class="element-card click"
+                   href="https://github.com/Uziel-Daniel/contacts-manager" target="_blank"><i
+                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
     `
 }
 
