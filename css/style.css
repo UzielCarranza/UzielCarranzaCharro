@@ -610,7 +610,7 @@ laptops
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
-        height: 70em;
+        height: 100%;
     }
 
     #technologies {
@@ -618,7 +618,7 @@ laptops
         flex-direction: row;
         width: 90%;
         justify-content: space-evenly;
-        height: 30em;
+        height: 100%;
         align-items: center;
         margin: 0 auto;
     }
@@ -629,8 +629,6 @@ laptops
         margin: 0;
     }
 
-    #projects-section {
-    }
 
     .card-back > a {
         top: 3em;
@@ -649,9 +647,6 @@ laptops
         height: auto;
     }
 
-    #technologies {
-        height: auto;
-    }
 }
 
 
