@@ -705,7 +705,8 @@ large screens
     #btn {
         font-size: 1.5em;
     }
-    #projects-section{
+
+    #projects-section {
         display: flex;
         flex-flow: row wrap;
     }
@@ -758,8 +759,13 @@ large screens
     .project-header {
         font-size: 30%;
         margin: 0;
-        padding: 0;
+        padding: 5rem;
+        height: 20rem;
 
+    }
+
+    #projects {
+        font-size: 12em;
     }
 
     #projects-section {
