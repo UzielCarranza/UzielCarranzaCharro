@@ -783,7 +783,8 @@ large screens
     }
 
     .link-element {
-        width: 100%;
+        width: 40%;
+        height: 7em;
     }
 }
 
