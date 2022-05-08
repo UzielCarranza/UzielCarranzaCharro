@@ -6,6 +6,8 @@ $(document).ready(function () {
 
     $('#projects-section').append(projects)
 
+
+    $('#mini-projects').append(miniProjects)
     $('footer').append(getFooter)
     $('#language-section').append(getLanSection)
 })
@@ -91,14 +93,15 @@ function projects() {
                 <img class="card-img" src="img/moviesApp.png" alt="weather app"></div>
             <div class="card-back">
                 <h3>Underground movies Mandness</h3>
-                <p>A pair programming project developed with vanilla javaScript, Jquery, CSS3, HTML5 and Glitch's API system</p>
+                <p>A pair programming project developed with vanilla javaScript, Jquery, CSS3, HTML5 and Glitch's API
+                    system</p>
                 <a title="Coffe Project Website" class="element-card click"
                    href="https://github.com/uziel-tyreik/movies" target="_blank"><i
                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
             </div>
 
         </div>
-         <div class="card">
+        <div class="card">
             <div class="card-front">
                 <img class="card-img" src="img/contactsManager.png" alt="Contacts manager app"></div>
             <div class="card-back">
@@ -110,6 +113,27 @@ function projects() {
             </div>
 
         </div>
+
+    `
+}
+
+function miniProjects() {
+    return `
+   
+                 <div class="card">
+
+                    <div class="card-front">
+                        <img class="card-img" src="img/react-mini-project.png" alt="Contacts manager app"></div>
+                    <div class="card-back">
+                        <h3>Card Weather</h3>
+                        <p>A one card project developed using React that uses the Open weather app API to retrieve weather data 
+                        and display it on the screen</p>
+                        <a title="Contacts Manager App" class="element-card click"
+                           href="
+                https://github.com/UzielCarranza/weatherApp-React/tree/main/src" target="_blank"><i
+                                class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
     `
 }
 
