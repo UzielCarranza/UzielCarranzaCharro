@@ -283,10 +283,12 @@ technologies
     border: 3px solid #fff;
     padding: 0.5em;
     transition: transform .3s;
+    height: 90%;
 }
 
 .tech-imgs:hover {
     transform: scale(1.5);
+    z-index: 99;
     background-color: #242424;
 }
 
