@@ -117,25 +117,6 @@ function projects() {
     `
 }
 
-function miniProjects() {
-    return `
-   
-                 <div class="card">
-
-                    <div class="card-front">
-                        <img class="card-img" src="img/react-mini-project.png" alt="Contacts manager app"></div>
-                    <div class="card-back">
-                        <h3>Card Weather</h3>
-                        <p>A one card project developed using React that uses the Open weather app API to retrieve weather data 
-                        and display it on the screen</p>
-                        <a title="Contacts Manager App" class="element-card click"
-                           href="
-                https://github.com/UzielCarranza/weatherApp-React/tree/main/src" target="_blank"><i
-                                class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-    `
-}
 
 function getFooter() {
     //language=HTML
