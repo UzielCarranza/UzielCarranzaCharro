@@ -66,6 +66,18 @@ function projects() {
     return `
         <div class="card">
             <div class="card-front">
+                <img class="card-img" src="img/bomb-reporter.png" alt="Contacts manager app"></div>
+            <div class="card-back">
+                <h3>Bomb Reporter</h3>
+                <p>A full-stack application developed by a team of four developers focusing to give Ukrainians the tools to report bombs near their area. </p>
+                <a title="Contacts Manager App" class="element-card click"
+                   href="https://github.com/Team-4-capstone" target="_blank"><i
+                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-front">
                 <img class="card-img" src="img/weather.png" alt="weather app"></div>
             <div class="card-back">
                 <h3>Weather App</h3>
