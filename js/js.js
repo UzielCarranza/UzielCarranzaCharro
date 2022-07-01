@@ -7,7 +7,6 @@ $(document).ready(function () {
     $('#projects-section').append(projects)
 
 
-    $('#mini-projects').append(miniProjects)
     $('footer').append(getFooter)
     $('#language-section').append(getLanSection)
 })
