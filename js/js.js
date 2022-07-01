@@ -54,7 +54,7 @@ function header() {
             <a title="Uziel's Github" class="link-element click" href="https://github.com/UzielCarranza"
                target="_blank"><i
                     class="fa-brands fa-github-square"> </i></a>
-            <a title="Download Resume" class="link-element click" href="#" target="_blank"><i
+            <a title="Download Resume" class="link-element click" href="../Files/Uziel_Carranza_Resume.pdf" target="_blank"><i
                     class="fas fa-file-pdf"></i></a>
         </div>
     `
