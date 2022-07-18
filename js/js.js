@@ -54,7 +54,8 @@ function header() {
             <a title="Uziel's Github" class="link-element click" href="https://github.com/UzielCarranza"
                target="_blank"><i
                     class="fa-brands fa-github-square"> </i></a>
-            <a title="Download Resume" class="link-element click" href="../Files/Uziel_Carranza_Resume.pdf" target="_blank"><i
+            <a title="Download Resume" class="link-element click" href="../Files/Uziel_Carranza_Resume.pdf"
+               target="_blank"><i
                     class="fas fa-file-pdf"></i></a>
         </div>
     `
@@ -68,7 +69,8 @@ function projects() {
                 <img class="card-img" src="img/bomb-reporter.png" alt="Contacts manager app"></div>
             <div class="card-back">
                 <h3>Bomb Reporter</h3>
-                <p>A full-stack application developed by a team of four developers focusing to give Ukrainians the tools to report bombs near their area. </p>
+                <p>A full-stack application developed by a team of four developers focusing to give Ukrainians the tools
+                    to report bombs near their area. </p>
                 <a title="Contacts Manager App" class="element-card click"
                    href="https://github.com/Team-4-capstone" target="_blank"><i
                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
@@ -124,6 +126,19 @@ function projects() {
             </div>
 
         </div>
+        <div class="card">
+            <div class="card-front">
+                <img class="card-img" src="img/pokemons-lister.png" alt="Pokemon lister project"></div>
+            <div class="card-back">
+                <h3>Pokemon Lister</h3>
+                <p>A React web application that displays Pokemons in card format.
+                    Some of the features include pagination, sorting options, etc...</p>
+                <a title="Contacts Manager App" class="element-card click"
+                   href="https://github.com/UzielCarranza/pokemon-lister" target="_blank"><i
+                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
 
     `
 }
@@ -171,15 +186,24 @@ function getLanSection() {
                      alt="bootStrap library">
             </div>
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
-                <img title="Bootstrap" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/java.png"
+                <img title="Java" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/java.png"
                      alt="Java programming language">
             </div>
 
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
-                <img title="Bootstrap" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/Jquery.png"
-                     alt="Java programming language">
+                <img title="Jquery" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/Jquery.png"
+                     alt="jquery">
+            </div>
+            <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
+                <img title="React" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/react.png"
+                     alt="React">
+            </div>
+            <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4 tech-imgs-section ">
+                <img title="tailwind" class="col-8 col-md-6 col-lg-5 tech-imgs" src="img/tailwind.png"
+                     alt="tailwind CSS">
             </div>
         </div>
+
 
     `;
 }
