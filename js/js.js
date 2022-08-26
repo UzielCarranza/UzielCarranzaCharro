@@ -1,7 +1,31 @@
 const developmentProjects = {
     frontEnd:
         [
-            {title: 'bomb reporter'}
+            {
+                id: 1,
+                title: 'bomb reporter',
+                url: 'img/bomb-reporter.png',
+                description: 'A full-stack application developed by a team of four developers focusing to give Ukrainians the tools to report bombs near their area.',
+                github_location: `https://github.com/Team-4-capstone`
+            },
+
+            {
+                id: 2,
+                title: 'GetMyWeather',
+                url: 'img/bomb-reporter.png'
+            },
+
+            {
+                id: 3,
+                title: 'bomb reporter',
+                url: 'img/bomb-reporter.png'
+            },
+
+            {
+                id: 4,
+                title: 'bomb reporter',
+                url: 'img/bomb-reporter.png'
+            },
         ],
     backEnd: [
 
@@ -76,30 +100,33 @@ function projects() {
     //language=HTML
     return `
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            ${developmentProjects.frontEnd.map(project => `
-     <ol class="carousel-indicators">
-         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-         <li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>
-     </ol>
-     <div class="carousel-inner">
-         <div class="carousel-item active">
-             <img class="d-block w-100" src="..." alt="First slide">
-         </div>
-         <div class="carousel-item">
-             <img class="d-block w-100" src="..." alt="Second slide">
-         </div>
-         <div class="carousel-item">
-             <img class="d-block w-100" src="..." alt="Third slide">
-         </div>
-     </div>
-     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-         <span class="sr-only">Previous</span>
-     </a>
-     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-         <span class="sr-only">Next</span>
-     </a>`).join('')};
+
+            <ol class="carousel-indicators">
+                ${developmentProjects.frontEnd.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
+                }
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/bomb-reporter.png" alt="First slide">
+                </div>
+                ${developmentProjects.frontEnd.map(project => `<div class="carousel-item">
+                    <h1 style="background-color: #dddddd">${project.title}
+                      <a title="${project.title}" href="${project.github_location}" target="_blank">
+                      <i class="fa-brands fa-github-square" aria-hidden="true"></i></a></h1>
+                    <p style="background-color: #cfe8ff">${project.description}</p>
+                    <img class="d-block w-100" src="${project.url}" alt="${project.id} slide">
+                </div>`).join('')}
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>`
 }
 
