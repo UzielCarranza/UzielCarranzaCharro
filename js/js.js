@@ -1,3 +1,14 @@
+const developmentProjects = {
+    frontEnd:
+        [
+            {title: 'bomb reporter'}
+        ],
+    backEnd: [
+
+        {title: 'hangman game'}
+    ]
+}
+
 $(document).ready(function () {
 
     $('#main--nav').append(mainDiv)
@@ -64,89 +75,121 @@ function header() {
 function projects() {
     //language=HTML
     return `
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/bomb-reporter.png" alt="Contacts manager app"></div>
-            <div class="card-back">
-                <h3>Bomb Reporter</h3>
-                <p>A full-stack application developed by a team of four developers focusing to give Ukrainians the tools
-                    to report bombs near their area. </p>
-                <a title="Contacts Manager App" class="element-card click"
-                   href="https://github.com/Team-4-capstone" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
-
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/weather.png" alt="weather app"></div>
-            <div class="card-back">
-                <h3>Weather App</h3>
-                <p>A web application developed with BootStrap, vanilla javaScript, CSS3, and HTML5</p>
-                <a title="Get myWeather App" class="element-card click"
-                   href="https://github.com/UzielCarranza/weather-app"
-                   target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/coffee.png" alt="weather app"></div>
-            <div class="card-back">
-                <h3>Coffee Project</h3>
-                <p>A pair programming project developed with vanilla javaScript, CSS3, and HTML5</p>
-                <a title="Coffe Project Website" class="element-card click"
-                   href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
-
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/moviesApp.png" alt="weather app"></div>
-            <div class="card-back">
-                <h3>Underground movies Mandness</h3>
-                <p>A pair programming project developed with vanilla javaScript, Jquery, CSS3, HTML5 and Glitch's API
-                    system</p>
-                <a title="Coffe Project Website" class="element-card click"
-                   href="https://github.com/uziel-tyreik/movies" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
-
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/contactsManager.png" alt="Contacts manager app"></div>
-            <div class="card-back">
-                <h3>Contacts Manager App</h3>
-                <p>A back-end pair programming project. Developed using Java and following the OOP practices</p>
-                <a title="Contacts Manager App" class="element-card click"
-                   href="https://github.com/Uziel-Daniel/contacts-manager" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
-
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/pokemons-lister.png" alt="Pokemon lister project"></div>
-            <div class="card-back">
-                <h3>Pokemon Lister</h3>
-                <p>A React web application that displays Pokemons in card format.
-                    Some of the features include pagination, sorting options, etc...</p>
-                <a title="Contacts Manager App" class="element-card click"
-                   href="https://github.com/UzielCarranza/pokemon-lister" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
-
-        </div>
-
-    `
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            ${developmentProjects.frontEnd.map(project => `
+     <ol class="carousel-indicators">
+         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>
+     </ol>
+     <div class="carousel-inner">
+         <div class="carousel-item active">
+             <img class="d-block w-100" src="..." alt="First slide">
+         </div>
+         <div class="carousel-item">
+             <img class="d-block w-100" src="..." alt="Second slide">
+         </div>
+         <div class="carousel-item">
+             <img class="d-block w-100" src="..." alt="Third slide">
+         </div>
+     </div>
+     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+     </a>
+     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+     </a>`).join('')};
+        </div>`
 }
+
+// function projects() {
+//     //language=HTML
+//     return `
+//         <div class="card">
+//             <div class="card-front">
+//                 <img class="card-img" src="img/bomb-reporter.png" alt="Contacts manager app"></div>
+//             <div class="card-back">
+//                 <h3>Bomb Reporter</h3>
+//                 <p>A full-stack application developed by a team of four developers focusing to give Ukrainians the tools
+//                     to report bombs near their area. </p>
+//                 <a title="Contacts Manager App" class="element-card click"
+//                    href="https://github.com/Team-4-capstone" target="_blank"><i
+//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+//             </div>
+//
+//         </div>
+//         <div class="card">
+//             <div class="card-front">
+//                 <img class="card-img" src="img/weather.png" alt="weather app"></div>
+//             <div class="card-back">
+//                 <h3>Weather App</h3>
+//                 <p>A web application developed with BootStrap, vanilla javaScript, CSS3, and HTML5</p>
+//                 <a title="Get myWeather App" class="element-card click"
+//                    href="https://github.com/UzielCarranza/weather-app"
+//                    target="_blank"><i
+//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+//             </div>
+//         </div>
+//         <div class="card">
+//             <div class="card-front">
+//                 <img class="card-img" src="img/coffee.png" alt="weather app"></div>
+//             <div class="card-back">
+//                 <h3>Coffee Project</h3>
+//                 <p>A pair programming project developed with vanilla javaScript, CSS3, and HTML5</p>
+//                 <a title="Coffe Project Website" class="element-card click"
+//                    href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
+//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+//             </div>
+//
+//         </div>
+//         <div class="card">
+//             <div class="card-front">
+//                 <img class="card-img" src="img/moviesApp.png" alt="weather app"></div>
+//             <div class="card-back">
+//                 <h3>Underground movies Mandness</h3>
+//                 <p>A pair programming project developed with vanilla javaScript, Jquery, CSS3, HTML5 and Glitch's API
+//                     system</p>
+//                 <a title="Coffe Project Website" class="element-card click"
+//                    href="https://github.com/uziel-tyreik/movies" target="_blank"><i
+//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+//             </div>
+//
+//         </div>
+//         <div class="card">
+//             <div class="card-front">
+//                 <img class="card-img" src="img/contactsManager.png" alt="Contacts manager app"></div>
+//             <div class="card-back">
+//                 <h3>Contacts Manager App</h3>
+//                 <p>A back-end pair programming project. Developed using Java and following the OOP practices</p>
+//                 <a title="Contacts Manager App" class="element-card click"
+//                    href="https://github.com/Uziel-Daniel/contacts-manager" target="_blank"><i
+//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+//             </div>
+//
+//         </div>
+//         <div class="card">
+//             <div class="card-front">
+//                 <img class="card-img" src="img/pokemons-lister.png" alt="Pokemon lister project"></div>
+//             <div class="card-back">
+//                 <h3>Pokemon Lister</h3>
+//                 <p>A React web application that displays Pokemons in card format.
+//                     Some of the features include pagination, sorting options, etc...</p>
+//                 <a title="Contacts Manager App" class="element-card click"
+//                    href="https://github.com/UzielCarranza/pokemon-lister" target="_blank"><i
+//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+//             </div>
+//
+//         </div>
+//
+//     `
+// }
 
 
 function getFooter() {
-    //language=HTML
+//language=HTML
     return `
+
 
         <h5 class="signature-footer">&#64;2022 Uziel Carranza Charro
         </h5>
@@ -161,6 +204,7 @@ function getFooter() {
                 Email</a></li>
             <li title="Download Resume" class="list--items"><a href="#">Resume</a></li>
         </ul>
+
     `;
 }
 
@@ -168,6 +212,7 @@ function getFooter() {
 function getLanSection() {
     // language=HTML
     return `
+
         <h1 id="lan">Technologies</h1>
         <div class="row" id="technologies">
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4  tech-imgs-section ">
@@ -203,6 +248,7 @@ function getLanSection() {
                      alt="tailwind CSS">
             </div>
         </div>
+
 
 
     `;
