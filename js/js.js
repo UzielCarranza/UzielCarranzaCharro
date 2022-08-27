@@ -56,6 +56,7 @@ const developmentProjects = {
             github_location: 'https://github.com/uziel-tyreik/movies'
         }
     ]
+
 }
 
 $(document).ready(function () {
