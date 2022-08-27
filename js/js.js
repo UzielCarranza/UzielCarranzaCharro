@@ -12,24 +12,49 @@ const developmentProjects = {
             {
                 id: 2,
                 title: 'GetMyWeather',
-                url: 'img/bomb-reporter.png'
+                url: 'img/weather.png',
+                description: 'A web application developed with BootStrap, vanilla javaScript, CSS3, and HTML5',
+                github_location: 'https://github.com/UzielCarranza/weather-app'
+            },
+            {
+                id: 2,
+                title: 'Pokemon Lister ',
+                url: 'img/pokemons-lister.png',
+                description: 'A React web application that displays Pokemons in card format. Some of the features include pagination, sorting options, etc...',
+                github_location: 'https://github.com/UzielCarranza/pokemon-lister'
             },
 
             {
                 id: 3,
-                title: 'bomb reporter',
-                url: 'img/bomb-reporter.png'
-            },
-
-            {
-                id: 4,
-                title: 'bomb reporter',
-                url: 'img/bomb-reporter.png'
+                title: 'Coffee Project',
+                url: 'img/coffee.png',
+                description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
+                github_location: 'https://uziel-jordan.github.io/coffee-project-1/'
             },
         ],
     backEnd: [
-
-        {title: 'hangman game'}
+        {
+            id: 1,
+            title: 'Contacts Manager App',
+            url: 'img/contactsManager.png',
+            description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
+            github_location: 'https://github.com/Uziel-Daniel/contacts-manager'
+        }, {
+            id: 2,
+            title: 'Hangman Game',
+            url: 'img/hangman.png',
+            description: 'One of the populars games, the hangman game developed using Java',
+            github_location: 'https://github.com/UzielCarranza/hangman-project'
+        }
+    ],
+    fullStack: [
+        {
+            id: 1,
+            title: 'Underground Movies Madness',
+            url: 'img/moviesApp.png',
+            description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
+            github_location: 'https://github.com/uziel-tyreik/movies'
+        }
     ]
 }
 
@@ -129,88 +154,6 @@ function projects() {
             </a>
         </div>`
 }
-
-// function projects() {
-//     //language=HTML
-//     return `
-//         <div class="card">
-//             <div class="card-front">
-//                 <img class="card-img" src="img/bomb-reporter.png" alt="Contacts manager app"></div>
-//             <div class="card-back">
-//                 <h3>Bomb Reporter</h3>
-//                 <p>A full-stack application developed by a team of four developers focusing to give Ukrainians the tools
-//                     to report bombs near their area. </p>
-//                 <a title="Contacts Manager App" class="element-card click"
-//                    href="https://github.com/Team-4-capstone" target="_blank"><i
-//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-//             </div>
-//
-//         </div>
-//         <div class="card">
-//             <div class="card-front">
-//                 <img class="card-img" src="img/weather.png" alt="weather app"></div>
-//             <div class="card-back">
-//                 <h3>Weather App</h3>
-//                 <p>A web application developed with BootStrap, vanilla javaScript, CSS3, and HTML5</p>
-//                 <a title="Get myWeather App" class="element-card click"
-//                    href="https://github.com/UzielCarranza/weather-app"
-//                    target="_blank"><i
-//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-//             </div>
-//         </div>
-//         <div class="card">
-//             <div class="card-front">
-//                 <img class="card-img" src="img/coffee.png" alt="weather app"></div>
-//             <div class="card-back">
-//                 <h3>Coffee Project</h3>
-//                 <p>A pair programming project developed with vanilla javaScript, CSS3, and HTML5</p>
-//                 <a title="Coffe Project Website" class="element-card click"
-//                    href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
-//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-//             </div>
-//
-//         </div>
-//         <div class="card">
-//             <div class="card-front">
-//                 <img class="card-img" src="img/moviesApp.png" alt="weather app"></div>
-//             <div class="card-back">
-//                 <h3>Underground movies Mandness</h3>
-//                 <p>A pair programming project developed with vanilla javaScript, Jquery, CSS3, HTML5 and Glitch's API
-//                     system</p>
-//                 <a title="Coffe Project Website" class="element-card click"
-//                    href="https://github.com/uziel-tyreik/movies" target="_blank"><i
-//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-//             </div>
-//
-//         </div>
-//         <div class="card">
-//             <div class="card-front">
-//                 <img class="card-img" src="img/contactsManager.png" alt="Contacts manager app"></div>
-//             <div class="card-back">
-//                 <h3>Contacts Manager App</h3>
-//                 <p>A back-end pair programming project. Developed using Java and following the OOP practices</p>
-//                 <a title="Contacts Manager App" class="element-card click"
-//                    href="https://github.com/Uziel-Daniel/contacts-manager" target="_blank"><i
-//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-//             </div>
-//
-//         </div>
-//         <div class="card">
-//             <div class="card-front">
-//                 <img class="card-img" src="img/pokemons-lister.png" alt="Pokemon lister project"></div>
-//             <div class="card-back">
-//                 <h3>Pokemon Lister</h3>
-//                 <p>A React web application that displays Pokemons in card format.
-//                     Some of the features include pagination, sorting options, etc...</p>
-//                 <a title="Contacts Manager App" class="element-card click"
-//                    href="https://github.com/UzielCarranza/pokemon-lister" target="_blank"><i
-//                         class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-//             </div>
-//
-//         </div>
-//
-//     `
-// }
 
 
 function getFooter() {
