@@ -143,12 +143,11 @@ function frontEndProjects() {
                  <div class="carousel-content">
                     <h1>${project.title}
                       <a title="${project.title}" href="${project.github_location}" target="_blank">
-                      <i class="fa-brands fa-github-square" aria-hidden="true"></i></a></h1>
+                      <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
                     <p>${project.description}</p>
                     </div>
                     <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
-                </div>
-`).join('')}
+                </div>`).join('')}
                 </div>
 
                 <a class="carousel-control-prev" href="#carousel-frontend" role="button" data-slide="prev">
@@ -179,7 +178,7 @@ function frontEndProjects() {
                    <div class="carousel-content">
                     <h1>${project.title}
                       <a title="${project.title}" href="${project.github_location}" target="_blank">
-                      <i class="fa-brands fa-github-square" aria-hidden="true"></i></a></h1>
+                      <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
                     <p>${project.description}</p>
                     </div>
                     <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
@@ -213,7 +212,7 @@ function frontEndProjects() {
                      <div class="carousel-content">
                     <h1>${project.title}
                       <a title="${project.title}" href="${project.github_location}" target="_blank">
-                      <i class="fa-brands fa-github-square" aria-hidden="true"></i></a></h1>
+                      <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
                     <p>${project.description}</p>
                     </div>
                     <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
