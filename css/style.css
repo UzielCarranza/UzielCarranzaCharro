@@ -901,23 +901,18 @@ CAROUSEL
     display: flex;
     flex-direction: column;
 }
-/*.carousel-inner > .item {*/
-/*    transform: translate3d(0,0,0) !important;*/
-/*}*/
-
-
-.carousel-inner .item {
-    opacity: 0;
-    transition:  none;
-    transform: translate3d(0,0,0) !important;
-}
-
-.carousel-inner .active {
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
-}
-
 .carousel-links{
     background-color: black;
     font-size: 1em;
+}
+
+/* change transition duration to control the speed of fade effect */
+.carousel-item {
+    /*transition: transform 2.6s ease-in-out;*/
+    transition: 0.9ms;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 0.1s;
 }
