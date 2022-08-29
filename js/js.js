@@ -1,10 +1,71 @@
+const developmentProjects = {
+    frontEnd:
+        [
+            {
+                id: 1,
+                title: 'bomb reporter',
+                url: 'img/bomb-reporter.png',
+                description: 'A full-stack application developed by a team of four developers focusing to give Ukrainians the tools to report bombs near their area.',
+                github_location: `https://github.com/Team-4-capstone`
+            },
+
+            {
+                id: 2,
+                title: 'GetMyWeather',
+                url: 'img/weather.png',
+                description: 'A web application developed with BootStrap, vanilla javaScript, CSS3, and HTML5',
+                github_location: 'https://github.com/UzielCarranza/weather-app'
+            },
+            {
+                id: 2,
+                title: 'Pokemon Lister ',
+                url: 'img/pokemons-lister.png',
+                description: 'A React web application that displays Pokemons in card format. Some of the features include pagination, sorting options, etc...',
+                github_location: 'https://github.com/UzielCarranza/pokemon-lister'
+            },
+
+            {
+                id: 3,
+                title: 'Coffee Project',
+                url: 'img/coffee.png',
+                description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
+                github_location: 'https://uziel-jordan.github.io/coffee-project-1/'
+            },
+        ],
+    backEnd: [
+        {
+            id: 1,
+            title: 'Contacts Manager App',
+            url: 'img/contactsManager.png',
+            description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
+            github_location: 'https://github.com/Uziel-Daniel/contacts-manager'
+        }, {
+            id: 2,
+            title: 'Hangman Game',
+            url: 'img/hangman.png',
+            description: 'One of the populars games, the hangman game developed using Java',
+            github_location: 'https://github.com/UzielCarranza/hangman-project'
+        }
+    ],
+    fullStack: [
+        {
+            id: 1,
+            title: 'Underground Movies Madness',
+            url: 'img/moviesApp.png',
+            description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
+            github_location: 'https://github.com/uziel-tyreik/movies'
+        }
+    ]
+
+}
+
 $(document).ready(function () {
 
     $('#main--nav').append(mainDiv)
 
     $('#content-header').append(header)
 
-    $('#projects-section').append(projects)
+    $('#projects-section').append(frontEndProjects)
 
 
     $('footer').append(getFooter)
@@ -61,92 +122,121 @@ function header() {
     `
 }
 
-function projects() {
+function frontEndProjects() {
     //language=HTML
     return `
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/bomb-reporter.png" alt="Contacts manager app"></div>
-            <div class="card-back">
-                <h3>Bomb Reporter</h3>
-                <p>A full-stack application developed by a team of four developers focusing to give Ukrainians the tools
-                    to report bombs near their area. </p>
-                <a title="Contacts Manager App" class="element-card click"
-                   href="https://github.com/Team-4-capstone" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+        <div class="projects-wrapper">
+            <div id="carousel-frontend" class="carousel slide spacer" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    ${developmentProjects.frontEnd.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
+                    }
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <h1>Front end Projects</h1>
+                        <img class="carousel-img" src="img/Front-end-Projects.png" alt="First slide">
+                    </div>
+                    ${developmentProjects.frontEnd.map(project => `
+                 <div class="carousel-item">
+                 <div class="carousel-content">
+                    <h1>${project.title}
+                      <a title="${project.title}" href="${project.github_location}" target="_blank">
+                      <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
+                    <p>${project.description}</p>
+                    </div>
+                    <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
+                </div>`).join('')}
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-frontend" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-frontend" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
 
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/weather.png" alt="weather app"></div>
-            <div class="card-back">
-                <h3>Weather App</h3>
-                <p>A web application developed with BootStrap, vanilla javaScript, CSS3, and HTML5</p>
-                <a title="Get myWeather App" class="element-card click"
-                   href="https://github.com/UzielCarranza/weather-app"
-                   target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/coffee.png" alt="weather app"></div>
-            <div class="card-back">
-                <h3>Coffee Project</h3>
-                <p>A pair programming project developed with vanilla javaScript, CSS3, and HTML5</p>
-                <a title="Coffe Project Website" class="element-card click"
-                   href="https://uziel-jordan.github.io/coffee-project-1/" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
+            <!--        backend projects-->
+            <div id="carousel-backend" class="carousel slide spacer" data-ride="carousel">
 
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/moviesApp.png" alt="weather app"></div>
-            <div class="card-back">
-                <h3>Underground movies Mandness</h3>
-                <p>A pair programming project developed with vanilla javaScript, Jquery, CSS3, HTML5 and Glitch's API
-                    system</p>
-                <a title="Coffe Project Website" class="element-card click"
-                   href="https://github.com/uziel-tyreik/movies" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+                <ol class="carousel-indicators">
+                    ${developmentProjects.backEnd.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
+                    }
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <h1>Back end Projects</h1>
+                        <img class="carousel-img" src="img/back-end.png" alt="First slide">
+                    </div>
+                    ${developmentProjects.backEnd.map(project => `<div class="carousel-item">
+                   <div class="carousel-content">
+                    <h1>${project.title}
+                      <a title="${project.title}" href="${project.github_location}" target="_blank">
+                      <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
+                    <p>${project.description}</p>
+                    </div>
+                    <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
+                </div>`).join('')}
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-backend" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-backend" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
 
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/contactsManager.png" alt="Contacts manager app"></div>
-            <div class="card-back">
-                <h3>Contacts Manager App</h3>
-                <p>A back-end pair programming project. Developed using Java and following the OOP practices</p>
-                <a title="Contacts Manager App" class="element-card click"
-                   href="https://github.com/Uziel-Daniel/contacts-manager" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+            <!--        full-stack projects-->
+            <div id="carousel-fullstack" class="carousel slide spacer" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    ${developmentProjects.fullStack.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
+                    }
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <h1>Full stack Projects</h1>
+                        <img class="carousel-img" src="img/full-stack.png" alt="First slide">
+                    </div>
+                    ${developmentProjects.fullStack.map(project => `<div class="carousel-item">
+                     <div class="carousel-content">
+                    <h1>${project.title}
+                      <a title="${project.title}" href="${project.github_location}" target="_blank">
+                      <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
+                    <p>${project.description}</p>
+                    </div>
+                    <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
+                </div>`).join('')}
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-fullstack" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-fullstack" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-
         </div>
-        <div class="card">
-            <div class="card-front">
-                <img class="card-img" src="img/pokemons-lister.png" alt="Pokemon lister project"></div>
-            <div class="card-back">
-                <h3>Pokemon Lister</h3>
-                <p>A React web application that displays Pokemons in card format.
-                    Some of the features include pagination, sorting options, etc...</p>
-                <a title="Contacts Manager App" class="element-card click"
-                   href="https://github.com/UzielCarranza/pokemon-lister" target="_blank"><i
-                        class="fa-brands fa-github-square" aria-hidden="true"></i></a>
-            </div>
-
-        </div>
-
     `
 }
 
 
 function getFooter() {
-    //language=HTML
+//language=HTML
     return `
+
 
         <h5 class="signature-footer">&#64;2022 Uziel Carranza Charro
         </h5>
@@ -161,6 +251,7 @@ function getFooter() {
                 Email</a></li>
             <li title="Download Resume" class="list--items"><a href="#">Resume</a></li>
         </ul>
+
     `;
 }
 
@@ -168,6 +259,7 @@ function getFooter() {
 function getLanSection() {
     // language=HTML
     return `
+
         <h1 id="lan">Technologies</h1>
         <div class="row" id="technologies">
             <div class="col-5 text-center col-md-5 col-lg-4 col-xl-4  tech-imgs-section ">
@@ -203,6 +295,7 @@ function getLanSection() {
                      alt="tailwind CSS">
             </div>
         </div>
+
 
 
     `;
