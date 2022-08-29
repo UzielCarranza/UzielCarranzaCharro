@@ -125,97 +125,110 @@ function header() {
 function frontEndProjects() {
     //language=HTML
     return `
-        <div id="carousel-frontend" class="carousel slide" data-ride="carousel">
+        <div class="projects-wrapper">
+            <div id="carousel-frontend" class="carousel slide spacer" data-ride="carousel">
 
-            <ol class="carousel-indicators">
-                ${developmentProjects.frontEnd.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
-                }
-            </ol>
-            <div class="carousel-inner">
+                <ol class="carousel-indicators">
+                    ${developmentProjects.frontEnd.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
+                    }
+                </ol>
+                <div class="carousel-inner">
 
-                <div class="carousel-item active">
-                    <h1 style="color: #dddddd">Front end Projects</h1>
-                    <img class="d-block w-100" src="img/Front-end-Projects.png" alt="First slide">
-                </div>
-                ${developmentProjects.frontEnd.map(project => `<div class="carousel-item">
-                    <h1 style="background-color: #dddddd">${project.title}
+                    <div class="carousel-item active">
+                        <h1>Front end Projects</h1>
+                        <img class="carousel-img" src="img/Front-end-Projects.png" alt="First slide">
+                    </div>
+                    ${developmentProjects.frontEnd.map(project => `
+                 <div class="carousel-item">
+                 <div class="carousel-content">
+                    <h1>${project.title}
                       <a title="${project.title}" href="${project.github_location}" target="_blank">
                       <i class="fa-brands fa-github-square" aria-hidden="true"></i></a></h1>
-                    <p style="background-color: #cfe8ff">${project.description}</p>
-                    <img class="d-block w-100" src="${project.url}" alt="${project.id} slide">
-                </div>`).join('')}
+                    <p>${project.description}</p>
+                    </div>
+                    <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
+                </div>
+`).join('')}
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-frontend" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-frontend" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
 
-            <a class="carousel-control-prev" href="#carousel-frontend" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-frontend" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+            <!--        backend projects-->
+            <div id="carousel-backend" class="carousel slide spacer" data-ride="carousel">
 
-<!--        backend projects-->
-        <div id="carousel-backend" class="carousel slide spacer" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    ${developmentProjects.backEnd.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
+                    }
+                </ol>
+                <div class="carousel-inner">
 
-            <ol class="carousel-indicators">
-                ${developmentProjects.backEnd.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
-                }
-            </ol>
-            <div class="carousel-inner">
+                    <div class="carousel-item active">
 
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/bomb-reporter.png" alt="First slide">
-                </div>
-                ${developmentProjects.backEnd.map(project => `<div class="carousel-item">
-                    <h1 style="background-color: #dddddd">${project.title}
+                        <h1>Back end Projects</h1>
+                        <img class="carousel-img" src="img/back-end.png" alt="First slide">
+                    </div>
+                    ${developmentProjects.backEnd.map(project => `<div class="carousel-item">
+                   <div class="carousel-content">
+                    <h1>${project.title}
                       <a title="${project.title}" href="${project.github_location}" target="_blank">
                       <i class="fa-brands fa-github-square" aria-hidden="true"></i></a></h1>
-                    <p style="background-color: #cfe8ff">${project.description}</p>
-                    <img class="d-block w-100" src="${project.url}" alt="${project.id} slide">
+                    <p>${project.description}</p>
+                    </div>
+                    <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
                 </div>`).join('')}
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-backend" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-backend" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
 
-            <a class="carousel-control-prev" href="#carousel-backend" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-backend" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+            <!--        full-stack projects-->
+            <div id="carousel-fullstack" class="carousel slide spacer" data-ride="carousel">
 
-        <!--        full-stack projects-->
-        <div id="carousel-fullstack" class="carousel slide spacer" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    ${developmentProjects.fullStack.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
+                    }
+                </ol>
+                <div class="carousel-inner">
 
-            <ol class="carousel-indicators">
-                ${developmentProjects.fullStack.map(project => `<li data-target="#carouselExampleIndicators" data-slide-to='${project.id}'></li>`).join('')
-                }
-            </ol>
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/bomb-reporter.png" alt="First slide">
-                </div>
-                ${developmentProjects.fullStack.map(project => `<div class="carousel-item">
-                    <h1 style="background-color: #dddddd">${project.title}
+                    <div class="carousel-item active">
+                        <h1>Full stack Projects</h1>
+                        <img class="carousel-img" src="img/full-stack.png" alt="First slide">
+                    </div>
+                    ${developmentProjects.fullStack.map(project => `<div class="carousel-item">
+                     <div class="carousel-content">
+                    <h1>${project.title}
                       <a title="${project.title}" href="${project.github_location}" target="_blank">
                       <i class="fa-brands fa-github-square" aria-hidden="true"></i></a></h1>
-                    <p style="background-color: #cfe8ff">${project.description}</p>
-                    <img class="d-block w-100" src="${project.url}" alt="${project.id} slide">
+                    <p>${project.description}</p>
+                    </div>
+                    <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
                 </div>`).join('')}
-            </div>
+                </div>
 
-            <a class="carousel-control-prev" href="#carousel-fullstack" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-fullstack" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <a class="carousel-control-prev" href="#carousel-fullstack" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-fullstack" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     `
 }
