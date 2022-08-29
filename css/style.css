@@ -16,7 +16,12 @@ body {
 
 h1 {
     font-size: 4em;
+    color: #dddddd;
 }
+p{
+    color: #dddddd;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -152,11 +157,20 @@ projects
 #projects-section {
     background-color: #242424;
     max-width: 100%;
-    width: 100%;
+    width: 100vh;
     height: auto;
+    margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
-    padding: 6em;
+    flex-direction: column;
+}
+.projects-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .project-header {
@@ -632,9 +646,8 @@ laptops
 
     #projects-section {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        height: 100%;
+        flex-flow: column wrap;
+        height: auto;
     }
 
     #technologies {
@@ -732,7 +745,8 @@ large screens
 
     #projects-section {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
+        height: auto;
     }
 
 
@@ -840,4 +854,61 @@ Animations
 #destroy:hover {
     background-color: #F06449;
     color: #dddddd;
+}
+
+
+/*
+UTILS
+*/
+
+
+.spacer{
+    margin: 2em;
+}
+
+
+/*
+CAROUSEL
+*/
+
+#carousel-frontend, #carousel-fullstack, #carousel-backend{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+}
+.carousel-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30em;
+}
+
+.carousel-img{
+    width: 100%;
+    max-width: 100%;
+    height: 25em;
+}
+/*.carousel-inner > .item {*/
+/*    transform: translate3d(0,0,0) !important;*/
+/*}*/
+
+
+.carousel-inner .item {
+    opacity: 0;
+    transition:  none;
+    transform: translate3d(0,0,0) !important;
+}
+
+.carousel-inner .active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }
