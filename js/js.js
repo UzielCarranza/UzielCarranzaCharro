@@ -134,7 +134,8 @@ function frontEndProjects() {
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/bomb-reporter.png" alt="First slide">
+                    <h1 style="color: #dddddd">Front end Projects</h1>
+                    <img class="d-block w-100" src="img/Front-end-Projects.png" alt="First slide">
                 </div>
                 ${developmentProjects.frontEnd.map(project => `<div class="carousel-item">
                     <h1 style="background-color: #dddddd">${project.title}
