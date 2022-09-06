@@ -586,6 +586,9 @@ small phones
     .carousel-content>h1{
         font-size: 1em;
     }
+    .carousel-item>img{
+        width: 70%;
+    }
     .carousel-content>p{
          font-size: 0.8em;
      }
