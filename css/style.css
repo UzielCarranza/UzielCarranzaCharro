@@ -432,6 +432,7 @@ light mode
     background-color: #fff;
 }
 
+
 .light-theme a,
 .light-theme h1,
 .light-theme p,
@@ -446,6 +447,7 @@ light mode
     color: #0000FF;
 }
 
+.light-theme body,
 .light-theme .fa-linkedin,
 .light-theme .fa-github-square,
 .light-theme .fa-file-pdf,
@@ -463,6 +465,10 @@ light mode
     background-color: #242424;
 }
 
+
+.light-theme #carousel-fullstack,
+.light-theme #carousel-backend,
+.light-theme #carousel-frontend,
 .light-theme .tech-imgs {
     border: 8px solid #242424;
 }
@@ -575,8 +581,7 @@ small phones
     .link-element{
         height: 5em !important;
     }
-
-/*
+    /*
    carousel
 */
 
@@ -591,12 +596,13 @@ small phones
         height: 50%;
     }
     .carousel-content>p{
-         font-size: 0.8em;
-     }
+        font-size: 0.8em;
+    }
     .carousel-links{
         font-size: 3em !important;
         margin-bottom: 8px;
     }
+
 
 }
 
@@ -928,6 +934,9 @@ CAROUSEL
 }
 .carousel-links{
     background-color: black;
+    font-size: 3em;
+}
+.carousel-content>h1{
     font-size: 1em;
 }
 

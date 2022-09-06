@@ -313,8 +313,10 @@ function toggleMode() {
     contrastToggle = !contrastToggle
     if (contrastToggle) {
         document.body.classList += "light-theme"
+        $('#body').css("background-color", "#fff");
     } else {
         document.body.classList.remove("light-theme")
+        $('#body').css("background-color", "#242424");
     }
 }
 
