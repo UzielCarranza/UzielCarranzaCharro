@@ -588,10 +588,15 @@ small phones
     }
     .carousel-item>img{
         width: 70%;
+        height: 50%;
     }
     .carousel-content>p{
          font-size: 0.8em;
      }
+    .carousel-links{
+        font-size: 3em !important;
+        margin-bottom: 8px;
+    }
 
 }
 
