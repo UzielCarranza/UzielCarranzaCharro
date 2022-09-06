@@ -576,6 +576,16 @@ small phones
         height: 5em !important;
     }
 
+/*
+   carousel
+*/
+    .carousel-content>h1{
+        font-size: 1em;
+    }
+    .carousel-content>p{
+         font-size: 0.8em;
+     }
+
 }
 
 
