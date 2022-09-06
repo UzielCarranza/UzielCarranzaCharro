@@ -432,6 +432,7 @@ light mode
     background-color: #fff;
 }
 
+
 .light-theme a,
 .light-theme h1,
 .light-theme p,
@@ -464,6 +465,10 @@ light mode
     background-color: #242424;
 }
 
+
+.light-theme #carousel-fullstack,
+.light-theme #carousel-backend,
+.light-theme #carousel-frontend,
 .light-theme .tech-imgs {
     border: 8px solid #242424;
 }
