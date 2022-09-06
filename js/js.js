@@ -141,10 +141,11 @@ function frontEndProjects() {
                     ${developmentProjects.frontEnd.map(project => `
                  <div class="carousel-item">
                  <div class="carousel-content">
-                    <h1>${project.title}
-                      <a title="${project.title}" href="${project.github_location}" target="_blank">
-                      <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
-                    <p>${project.description}</p>
+                    <a title="${project.title}" href="${project.github_location}" target="_blank">
+                      <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a>
+                   
+                    <h1>${project.title}</h1>
+                 <p>${project.description}</p>
                     </div>
                     <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
                 </div>`).join('')}
@@ -176,10 +177,11 @@ function frontEndProjects() {
                     </div>
                     ${developmentProjects.backEnd.map(project => `<div class="carousel-item">
                    <div class="carousel-content">
-                    <h1>${project.title}
                       <a title="${project.title}" href="${project.github_location}" target="_blank">
                       <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
-                    <p>${project.description}</p>
+                   
+                    <h1>${project.title}
+                   <p>${project.description}</p>
                     </div>
                     <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
                 </div>`).join('')}
@@ -210,10 +212,11 @@ function frontEndProjects() {
                     </div>
                     ${developmentProjects.fullStack.map(project => `<div class="carousel-item">
                      <div class="carousel-content">
-                    <h1>${project.title}
-                      <a title="${project.title}" href="${project.github_location}" target="_blank">
+                         <a title="${project.title}" href="${project.github_location}" target="_blank">
                       <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
-                    <p>${project.description}</p>
+                   
+                    <h1>${project.title}
+                  <p>${project.description}</p>
                     </div>
                     <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
                 </div>`).join('')}
