@@ -610,9 +610,7 @@ small phones
         margin-bottom: 8px;
     }
 
-
 }
-
 
 /*
 tablets
@@ -949,7 +947,7 @@ CAROUSEL
     font-size: 3em;
 }
 
-.carousel-content > h1 {
+.carousel-content>h1{
     font-size: 1em;
 }
 
