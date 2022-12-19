@@ -35,12 +35,19 @@ const developmentProjects = {
     backEnd: [
         {
             id: 1,
+            title: 'Microservice API Music Store Catalog',
+            url: 'img/music-store-catalog.png',
+            description: 'A microservice with a REST API that provides CRUD functionality for a database hosted and deployed on Heroku using Docker to containerize the application.',
+            github_location: 'https://github.com/UzielCarranza/music-store-catalog'
+        },
+        {
+            id: 2,
             title: 'Contacts Manager App',
             url: 'img/contactsManager.png',
             description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
             github_location: 'https://github.com/Uziel-Daniel/contacts-manager'
         }, {
-            id: 2,
+            id: 3,
             title: 'Hangman Game',
             url: 'img/hangman.png',
             description: 'One of the populars games, the hangman game developed using Java',
@@ -179,8 +186,7 @@ function frontEndProjects() {
                    <div class="carousel-content">
                       <a title="${project.title}" href="${project.github_location}" target="_blank">
                       <i class="fa-brands fa-github-square carousel-links" aria-hidden="true"></i></a></h1>
-                   
-                    <h1>${project.title}
+                    <h1>${project.title}</h1>
                    <p>${project.description}</p>
                     </div>
                     <img class="carousel-img" src="${project.url}" alt="${project.id} slide">
