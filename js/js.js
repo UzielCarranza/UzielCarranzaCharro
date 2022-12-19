@@ -42,12 +42,19 @@ const developmentProjects = {
         },
         {
             id: 2,
+            title: 'Microservice API Music Store Recommendations',
+            url: 'img/music_store_recommendation.png',
+            description: 'A microservice with a REST API that provides CRUD functionality for a database hosted and deployed on Heroku using Docker to containerize the application.',
+            github_location: 'https://github.com/UzielCarranza/music-store-recommendation'
+        },
+        {
+            id: 3,
             title: 'Contacts Manager App',
             url: 'img/contactsManager.png',
             description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
             github_location: 'https://github.com/Uziel-Daniel/contacts-manager'
         }, {
-            id: 3,
+            id: 4,
             title: 'Hangman Game',
             url: 'img/hangman.png',
             description: 'One of the populars games, the hangman game developed using Java',
