@@ -7,6 +7,16 @@
     font-family: "Roboto", sans-serif;
 }
 
+/*update*/
+.update{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2em 0;
+}
 
 body {
     margin: 0;
@@ -440,14 +450,19 @@ light mode
 .light-theme h1,
 .light-theme p,
 .light-theme .fa-adjust,
-.light-theme #language-section > h1 {
+.light-theme #language-section > h1{
     color: #242424;
     font-weight: bold;
 }
 
 .light-theme .yellow,
-.light-theme .header--a {
+.light-theme .header--a
+{
     color: #0000FF;
+}
+
+.light-theme .update{
+    color: #F06449;
 }
 
 .light-theme body,

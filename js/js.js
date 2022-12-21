@@ -89,8 +89,8 @@ $(document).ready(function () {
 //language=HTML
 function mainDiv() {
     return `
-        <div style="display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 2em 0em">
-            <h1 style="color: yellow">New site update coming soon</h1>
+        <div>
+            <h1 class="update" >New site update coming soon!!!</h1>
         </div>
         <ul class="nav--list">
             <li class="list--items" title="Uziel's LinkedIn Profile"><a
